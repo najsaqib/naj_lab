@@ -9,8 +9,7 @@ services:
       - /vol_c:/home/shared
     environment:
       - PASSWORD=spooky
-    env_file: ./private_env.sh
-    
+        
   postgres:
       image: postgres
       environment:
