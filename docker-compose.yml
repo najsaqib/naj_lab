@@ -7,6 +7,8 @@ services:
     volumes:
       - $HOME/rstudio_users:/home/
       - /vol_c:/home/shared
+    environment:
+      - PASSWORD=spooky
     env_file: ./private_env.sh
     
   postgres:
