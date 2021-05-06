@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  rstudio:
+    image: rocker/geospatial 
+    restart: always
+    volumes:
+      - $HOME/rstudio_users:/home/
+      - /vol_c:/home/shared
+    env_file: ./private_env.sh
+    
+  postgres:
+      image: postgres
+      environment:
+          - POSTGRES_PASSWORD=password
