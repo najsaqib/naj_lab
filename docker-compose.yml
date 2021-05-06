@@ -4,9 +4,6 @@ services:
   rstudio:
     image: rocker/geospatial 
     restart: always
-    volumes:
-      - $HOME/rstudio_users:/home/
-      - /vol_c:/home/shared
     environment:
       - PASSWORD=spooky
         
