@@ -168,3 +168,126 @@ ggplot(waterloo_group, aes(x = date_new, y = count)) +
        
 
 ```
+
+```{r}
+# Load Edmonton data
+
+edmonton_test <- read.socrata("https://data.edmonton.ca/resource/tq23-qn4m.json?$where=log_timstamp between '2020-03-01T00:00:00.000' and '2020-05-05T23:59:59.000'")
+
+# edmonton_eco <- read.socrata("https://data.edmonton.ca/resource/tq23-qn4m.csv") # reads whole damn dataset
+
+edmonton_filter <- edmonton_test %>%  
+  clean_names() %>%
+  mutate(log_timstamp = ymd_hms(log_timstamp)) %>%
+  mutate(date = as.Date(log_timstamp), time = format(log_timstamp, "%H:%M:%S")) %>%
+  mutate(combined_total_count = as.numeric(combined_total_count))
+
+edmonton_group <-edmonton_filter %>%
+  group_by(date) %>%
+  summarise(count = sum(combined_total_count)) #%>%
+  #filter(date_new >= max(date_new) - years(1)) %>%
+  #filter(!(abs(count - median(count)) > 2*sd(count)))
+  
+```
+
+```{r}
+
+# Plot Edmonton eco counter data
+ggplot(edmonton_group %>% filter(date >= "2020-03-01"), aes(x = date, y = count)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = F) + 
+    theme(panel.grid = element_blank(),
+      # axis.title.x = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.line = element_blank(),
+      #legend.position = "bottom",
+      panel.background = element_blank(),
+      plot.margin = margin(0.5, 0.5, 0.5, 1, "cm"),
+      panel.grid.major = element_line(colour = 'transparent')) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "Date", y = "Daily Bike and Pedestrian Count", title = "Edmonton Eco Counter Data for March 2020", 
+       caption = "Data Source: Edmonton Open Data")
+       
+
+```
+
+## Construct a social interaction index (i.e. inverse of social isolation)
+```{r}
+
+# Establish car baseline (first week of March) using Surrey data
+
+car_baseline <- surrey_traffic_filter %>%
+  filter(date < "2020-03-08") %>%
+  mutate(week = "One") %>%
+  group_by(week) %>%
+  summarise(average = mean(traffic)) %>%
+  pull(average)
+  
+  
+
+# Establish pedestrian and bicycle baseline (first week of March) using Edmonton data
+
+ped_baseline <- edmonton_group %>%
+  filter(date < "2020-03-08") %>%
+  filter(date > "2020-03-01") %>% # filtering out first of March because it seems like a weird outlier
+  mutate(week = "One") %>%
+  group_by(week) %>%
+  summarise(average = mean(count)) %>%
+  pull(average)
+
+# Create car index
+
+car_index <- surrey_traffic_filter %>%
+  mutate(baseline = car_baseline) %>%
+  mutate(index_car = (traffic/baseline*100)) %>%
+  select(-traffic, -baseline)
+
+# Create ped/bike index
+
+ped_index <- edmonton_group %>%
+  mutate(baseline = ped_baseline) %>%
+  mutate(index_ped = (count/baseline*100)) %>%
+  select(-count, -baseline)
+
+# Create combined, "Social Interaction Index" (SII) where both car and ped indices have equal weights
+
+sii <- left_join(car_index, ped_index, by = "date") %>%
+  mutate(index = rowMeans(select(., starts_with("index")), na.rm = TRUE)) %>%
+  filter(date > "2020-03-01") #excluding first day of March due to data error caused outlier
+  
+
+```
+
+```{r}
+
+# Plot social interaction index
+ggplot(sii, aes(x = date, y = index)) +
+  geom_point() +
+  annotate("rect", fill = "grey", alpha = 0.4, 
+        xmin = as.Date("2020-03-13"), xmax = as.Date("2020-03-14"),
+        ymin = -Inf, ymax = Inf) +
+    # annotate("text", 
+    #     x = as.Date("2020-03-15"), y = 110,
+    #     label = "March 13: returning international travellers advised to self-isolate for 14 days.") +
+  geom_vline(aes(xintercept = as.numeric(as.POSIXct(as.Date("2020-03-13")))), colour = "red") +
+  geom_hline(yintercept = 100) +
+  geom_smooth(method = "loess", se = F) + 
+    theme(panel.grid = element_blank(),
+      # axis.title.x = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.line = element_blank(),
+      #legend.position = "bottom",
+      panel.background = element_blank(),
+      #plot.margin = margin(0.5, 0.5, 0.5, 1, "cm"),
+      panel.grid.major = element_line(colour = 'transparent')) +
+  scale_y_continuous(labels = comma, position = "right") +
+  labs(x = "Date", y = "Index", title = "Social Interaction Index", 
+       subtitle = "Baseline is the average daily car, pedestrian, and bicycle traffic count for the first week of March",
+       caption = "Data Sources: Edmonton Open Data and Surrey Open Data\nShaded date (Mar. 13) represents when returning international travellers were advised to self-isolate for 14 days")
+       
+```
+
