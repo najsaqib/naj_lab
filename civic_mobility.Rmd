@@ -1,0 +1,170 @@
+---
+title: "Covid-19 High Frequency Data"
+date: '2020-03-23'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE,
+	fig.width = 8,
+	cache=TRUE
+)
+library(tidyverse)
+library(lubridate)
+library(opendatatoronto)
+library(janitor)
+library(jsonlite)
+library(RSocrata)
+library(scales)
+
+```
+
+
+## Surrey Traffic
+
+```{r}
+# Load three weeks of Surrey traffic data (takes a long ass time)
+
+# surrey_traffic_w1 <- fromJSON("http://gis.surrey.ca:8080/fmedatastreaming/TrafficLoopCount/TrafficLoopCounts.fmw?startdatetime=2020-03-01T00:00:00&enddatetime=2020-03-07T23:59:59") %>% clean_names() %>% mutate(date = as.Date(datetime))
+# 
+# surrey_traffic_w2 <- fromJSON("http://gis.surrey.ca:8080/fmedatastreaming/TrafficLoopCount/TrafficLoopCounts.fmw?startdatetime=2020-03-08T00:00:00&enddatetime=2020-03-14T23:59:59") %>% clean_names() %>% mutate(date = as.Date(datetime))
+# 
+# surrey_traffic_w3 <- fromJSON("http://gis.surrey.ca:8080/fmedatastreaming/TrafficLoopCount/TrafficLoopCounts.fmw?startdatetime=2020-03-15T00:00:00&enddatetime=2020-03-21T23:59:59") %>% clean_names() %>% mutate(date = as.Date(datetime))
+# 
+ surrey_traffic_w4 <- fromJSON("http://gis.surrey.ca:8080/fmedatastreaming/TrafficLoopCount/TrafficLoopCounts.fmw?startdatetime=2020-03-22T00:00:00&enddatetime=2020-03-28T23:59:59") %>% clean_names() %>% mutate(date = as.Date(datetime))
+
+surrey_traffic_w4 <- surrey_traffic_w4 %>% select(date, traffic_count)
+surrey_traffic <- surrey_traffic %>% select(date, traffic_count)
+
+surrey_traffic <- bind_rows(surrey_traffic, surrey_traffic_w4)
+
+#write_csv(surrey_traffic, "surrey_traffic_march.csv")
+
+#surrey_traffic <- read_csv("surrey_traffic_march.csv")
+
+surrey_traffic_filter <- surrey_traffic %>%
+  group_by(date) %>%
+  summarise(traffic = sum(traffic_count))
+
+
+
+```
+
+
+
+```{r}
+
+# Plot Surrey traffic data
+ggplot(surrey_traffic_filter, aes(x = date, y = traffic)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = F) +
+  #xlim(min(surrey_traffic_filter$date),max(surrey_traffic_filter$date)+1)
+    theme(panel.grid = element_blank(),
+      # axis.title.x = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.line = element_blank(),
+      #legend.position = "bottom",
+      panel.background = element_blank(),
+      plot.margin = margin(0.5, 0.5, 0.5, 1, "cm"),
+      panel.grid.major = element_line(colour = 'transparent')) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "Date", y = "Daily traffic loop counts", title = "Surrey Traffic Loop Counts in March 2020",
+       caption = "Data Source: Surrey Open Data")
+       
+```
+
+
+## Toronto shelter
+
+```{r}
+# Load Toronto data through opendatatoronto package
+
+packages <- list_packages()
+
+shelter_packages <- search_packages("daily shelter")
+
+shelter_resources <- shelter_packages %>% list_package_resources() %>% 
+  filter(id == "524acc3c-3079-4453-a43e-751b996d113c")
+
+shelter_data <- shelter_resources %>% get_resource() %>% clean_names()
+
+toronto_shelter_filter <- shelter_data %>%
+  group_by(occupancy_date) %>%
+  summarise(occupancy_rate = sum(occupancy)/sum(capacity)) 
+
+```
+
+```{r}
+
+# Plot Tornoto shelter data
+ggplot(toronto_shelter_filter, aes(x = occupancy_date, y = occupancy_rate)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = F) + 
+    theme(panel.grid = element_blank(),
+      # axis.title.x = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.line = element_blank(),
+      #legend.position = "bottom",
+      panel.background = element_blank(),
+      plot.margin = margin(0.5, 0.5, 0.5, 1, "cm"),
+      panel.grid.major = element_line(colour = 'transparent')) +
+  scale_y_continuous(labels = percent) +
+  labs(x = "Date", y = "Daily Occupancy Rate (%)", title = "Toronto Shelter Occupancy in March 2020", 
+       caption = "Data Source: Toronto Open Data")
+       
+
+```
+
+## Waterloo eco-counter
+
+```{r}
+# Load Waterloo data
+
+#waterloo_eco <- fromJSON("https://opendata.arcgis.com/datasets/5d41afff252e45b5b5fe7fc3fd5df3ab_0.geojson")
+
+waterloo_eco <- read_csv("https://opendata.arcgis.com/datasets/5d41afff252e45b5b5fe7fc3fd5df3ab_0.csv")
+
+waterloo_eco_filter <- waterloo_eco %>% 
+  clean_names() %>%
+  mutate(date = ymd_hms(date)) %>%
+  mutate(date_new = as.Date(date), time = format(date, "%H:%M:%S"))
+
+waterloo_group <-waterloo_eco_filter %>%
+  group_by(date_new) %>%
+  summarise(count = sum(total_count)) %>%
+  filter(date_new >= max(date_new) - years(2)) %>%
+  filter(!(abs(count - median(count)) > 2*sd(count)))
+  
+
+
+```
+
+```{r}
+
+# Plot Waterloo eco counter data
+ggplot(waterloo_group, aes(x = date_new, y = count)) +
+  geom_point() +
+  geom_smooth(method = "loess", se = F) + 
+    theme(panel.grid = element_blank(),
+      # axis.title.x = element_blank(),
+      # axis.text.x = element_blank(),
+      # axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.line = element_blank(),
+      #legend.position = "bottom",
+      panel.background = element_blank(),
+      plot.margin = margin(0.5, 0.5, 0.5, 1, "cm"),
+      panel.grid.major = element_line(colour = 'transparent')) +
+  scale_x_date(breaks = "16 week") +
+  scale_y_continuous(labels = comma) +
+  labs(x = "Date", y = "Daily Bike and Pedestrian Count", title = "Waterloo Eco Counter Data since December 2020", 
+       caption = "Data Source: Waterloo Open Data")
+       
+
+```
