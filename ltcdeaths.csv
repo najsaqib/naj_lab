@@ -1,0 +1,1728 @@
+facility,location,region,dead,beds,owner_type,facility_type
+1,Montreal,QC,150,NA,Public Hospital,HOSP
+2,Laval,QC,108,285,Public,LTC
+3,Montreal,QC,102,273,Private,LTC
+4,Montreal,QC,100,398,Public,LTC
+5,Montreal,QC,93,300,Public,LTC
+6,North York,ON,91,252,"Private, for profit",LTC
+7,Montreal,QC,87,276,Public,LTC
+8,Montreal,QC,86,280,"Private, subsidized",LTC
+9,Scarborough,ON,81,254,"Private, for profit",LTC
+10,Saint-Hyacinthe,QC,80,421,Public,LTC
+11,Montreal,QC,77,185,Public,LTC
+12,Saint-Jérôme,QC,76,410,Public Hospital,HOSP
+13,Dollard-des-Ormeaux,QC,74,160,Private,LTC
+14,Laval,QC,73,204,"Private, for profit",LTC
+15,Barrie,ON,72,140,"Private, for profit",LTC
+16,Mississauga,ON,72,237,"Private, for profit",LTC
+17,Montreal,QC,71,350,"Private, not subsidized",LTC
+18,Pickering,ON,70,233,"Private, for profit",LTC
+19,Montreal,QC,69,94,Public,LTC
+20,Montreal,QC,69,227,Public,LTC
+21,Cote St-Luc,QC,67,350,Public,LTC
+22,Montéregie-Est,QC,67,NA,Public Hospital,HOSP
+23,Longueuil,QC,66,224,Public,LTC
+24,Montreal,QC,64,192,Public,LTC
+25,Montreal,QC,64,198,Private,LTC
+26,Lachine,QC,63,187,Public,LTC
+27,Windsor,ON,63,256,"Private, for profit",LTC
+28,Dorval,QC,61,139,"Private, for profit",LTC
+29,Ottawa,ON,61,303,"Private, for profit",LTC
+30,Laval,QC,60,145,Private,LTC
+31,LaSalle,QC,59,202,Public,LTC
+32,Edmonton,AB,59,276,Public (?),LTC
+33,Montreal,QC,59,351,Public,LTC
+34,Montreal,QC,58,160,Public,LTC
+35,Quebec City,QC,58,259,Public,LTC
+36,Montreal,QC,57,446,Public,LTC
+37,Montreal,QC,56,203,Public,LTC
+38,Winnipeg,MB,55,169,"Private, for profit",LTC
+39,Montreal,QC,54,157,Public,LTC
+40,Scarborough,ON,54,159,"Private, for profit",LTC
+41,Laval,QC,53,152,Private,LTC
+42,Trois-Rivières,QC,53,179,Public,LTC
+43,Halifax,NS,53,485,"Private, not for profit",LTC
+44,Waterloo,ON,51,240,"Private, for profit",LTC
+45,North York,ON,51,269,"Private, for profit",LTC
+46,Montreal,QC,50,160,Public,LTC
+47,Etobicoke,ON,50,242,"Private, for profit",LTC
+48,"Orleans, ON",ON,49,160,"Private, for profit",LTC
+49,Quebec City,QC,49,276,Public,LTC
+50,Toronto,ON,48,168,"Private, not for profit",LTC
+51,Scarborough,ON,48,169,"Private, for profit",LTC
+52,Brossard,QC,47,249,Private,LTC
+53,Saguenay,QC,47,NA,NA,LTC
+54,Calgary,AB,46,352,"Private, for profit",LTC
+55,Montreal,QC,45,154,Public,LTC
+56,Joliette,QC,45,159,Public,LTC
+57,Montreal,QC,45,168,Public,LTC
+58,Hamilton,ON,45,184,"Private, for profit",LTC
+59,Laval,QC,44,94,"Private, not subsidized",LTC
+60,Laval,QC,44,100,Public,LTC
+61,Shawinigan,QC,44,154,Public,LTC
+62,Winnipeg,MB,44,155,"Private, for profit",LTC
+63,Drummondville,QC,44,328,Public,LTC
+64,Quebec City,QC,43,99,Public,LTC
+65,St. Catharines,ON,43,111,"Private, for profit",LTC
+66,Edmonton,AB,43,184,"Private, not for profit",LTC
+67,Regina,SK,43,199,"Private, for profit",LTC
+68,Scarborough,ON,43,289,"Private, for profit",LTC
+69,Scarborough,ON,43,299,"Private, for profit",LTC
+70,Montreal,QC,42,128,Public,LTC
+71,Etobicoke,ON,42,247,"Private, for profit",LTC
+72,South Vancouver,BC,41,117,"Private, not for profit",LTC
+73,Scarborough,ON,41,249,Public,LTC
+74,Saint-Augustin-de-Desmaures,QC,41,256,"Private, not subsidized",LTC
+75,Quebec City,QC,41,NA,Public Hospital,HOSP
+76,Montreal,QC,41,NA,Public Hospital,HOSP
+77,Marieville,QC,40,122,Public,LTC
+78,Montéregie-Ouest,QC,40,NA,Public Hospital,HOSP
+79,Ajax,ON,39,100,"Private, for profit",LTC
+80,Saint-Hubert,QC,38,99,Public,LTC
+81,Montreal,QC,38,174,Private,LTC
+82,Montreal,QC,38,115,Public Hospital,HOSP
+83,Laval,QC,37,175,Public,LTC
+84,Burnaby,BC,37,300,"Private, not for profit",LTC
+85,Montreal,QC,36,100,Public,LTC
+86,Repentigny,QC,36,102,"Private, not subsidized",LTC
+87,Sutton West,ON,36,120,"Private, for profit",LTC
+88,Montreal,QC,36,144,Public,LTC
+89,Etobicoke,ON,36,158,"Private, for profit",LTC
+90,Saint-Lambert,QC,36,200,"Private, not subsidized",LTC
+91,Quebec City,QC,36,281,"Private, for profit",LTC
+92,Beauport,QC,36,320,"Private, not for profit",LTC
+93,Edmonton,AB,36,439,Public,LTC
+94,Hamilton,ON,36,125,Public Hospital,HOSP
+95,Montreal,QC,35,100,Public,LTC
+96,Quebec City,QC,35,142,Public,LTC
+97,Mississauga,ON,35,151,"Private, for profit",LTC
+98,Niagara Falls,ON,35,153,"Private, for profit",LTC
+99,Montreal,QC,35,220,Public,LTC
+100,Toronto,ON,35,224,"Private, for profit",LTC
+101,Chicoutimi,QC,34,96,Public,LTC
+102,Granby,QC,34,106,Public,LTC
+103,Whitby,ON,34,136,"Private, non-profit",LTC
+104,Montreal,QC,34,156,Public,LTC
+105,Winnipeg,MB,34,276,Private,LTC
+106,Toronto,ON,34,391,"Private, not for profit",LTC
+107,Montreal,qc,34,NA,Public Hospital,HOSP
+108,Laval,QC,33,87,Private,RR
+109,Toronto,ON,33,105,"Private, not for profit",LTC
+110,Montreal,QC,33,125,Public,LTC
+111,Montreal,QC,32,100,Public,LTC
+112,Laurentides,QC,32,NA,Public Hospital,HOSP
+113,Montreal,QC,32,283,Public,LTC
+114,Montreal,QC,31,90,"Private, not for profit",RR
+115,"Hagersville, ON",ON,31,121,"Private, for profit",LTC
+116,Ottawa,ON,31,126,"Private, for profit",LTC
+117,Scarborough,ON,31,128,"Private, not for profit",LTC
+118,Sainte-Thérèse,QC,31,130,"Private, not subsidized",LTC
+119,Brampton,ON,31,160,"Private, for profit",LTC
+120,New Westminister,BC,31,165,"Private, for profit",LTC
+121,Woodbridge,ON,31,224,"Private, for profit",LTC
+122,Mauricie,QC,31,NA,Public Hospital,HOSP
+123,Bobcaygeon,ON,30,65,"Private, for profit",LTC
+124,Burnaby,BC,30,80,"Private, for profit",LTC
+125,Almonte,ON,30,82,"Private, for profit",LTC
+126,Edmonton,AB,30,90,"Private, for profit",LTC
+127,Toronto,ON,30,200,"Private, not for profit",LTC
+128,Winnipeg,MB,30,221,"Private, for profit",LTC
+129,Calgary,AB,30,250,"Private, not for profit",LTC
+130,Sherbrooke,QC,30,261,Public,LTC
+131,Brampton,ON,29,120,"Private, not for profit",LTC
+132,Montreal,QC,29,125,Public,LTC
+133,Assomption,QC,29,167,Public,LTC
+134,Scarborough,ON,29,169,"Private, for profit",LTC
+135,Trois-Rivières,QC,29,205,Public,LTC
+136,Montreal,QC,29,230,Public,LTC
+137,London,ON,29,418,Public,LTC
+138,Chaudière-Appalaches,QC,29,NA,Public Hospital,HOSP
+139,Montreal,QC,28,126,"Private, for profit",RR
+140,Quebec City,QC,28,96,Public,LTC
+141,Brampton,ON,28,128,"Private, for profit",LTC
+142,Montreal,QC,28,190,Public,LTC
+143,Calgary,AB,28,296,"Private, for profit",LTC
+144,Richmond Hill,ON,28,350,Public Hospital,HOSP
+145,Montreal,QC,27,100,Public,LTC
+146,Winnipeg,MB,27,100,Private,LTC
+147,Abbotsford,BC,27,104,Private,LTC
+148,Woodbridge,ON,27,168,"Private, not for profit",LTC
+149,Etobicoke,ON,27,192,"Private, for profit",LTC
+150,Milton,ON,27,200,Public,LTC
+151,Sherbrooke,QC,27,NA,Public Hospital,HOSP
+152,Langley,BC,26,121,"Private, not for profit",LTC
+153,Calgary,AB,26,150,"Private, for profit",LTC
+154,Kleinburg,ON,26,160,"Private, not for profit",LTC
+155,Ottawa,ON,26,196,"Private, for profit",LTC
+156,West Vancouver,BC,26,205,"Private, for profit",LTC
+157,Edmonton,AB,26,222,Public,LTC
+158,Sainte-Thérèse,QC,26,223,Public,LTC
+159,Gloucester,ON,26,242,"Private, for profit",LTC
+160,Edmonton,AB,26,312,Public,LTC
+161,Calgary,AB,26,400,"Private, not for profit",LTC
+162,Saint-Hyacinthe,QC,25,226,"Private, for profit",RR
+163,Gatineau,QC,25,80,Public,LTC
+164,Terrebonne,QC,25,102,Private,LTC
+165,Komoka,ON,25,120,"Private, for profit",LTC
+166,Georgetown,ON,25,130,"Private, for profit",LTC
+167,Charny,QC,25,132,Public,LTC
+168,Vancouver,BC,25,132,"Private, not for profit",LTC
+169,Windsor,ON,25,140,"Private, for profit",LTC
+170,Oshawa,ON,25,154,"Private, for profit",LTC
+171,Edmonton,QC,25,155,"Private, for profit",LTC
+172,Niagara Falls,ON,25,160,"Private, for profit",LTC
+173,Etobicoke,ON,25,187,"Private, for profit",LTC
+174,St. Catharines,ON,25,200,"Private, for profit",LTC
+175,North York,ON,25,202,"Private, for profit",LTC
+176,Gatineau,QC,25,267,Public,LTC
+177,Laval,QC,24,65,"Private, for profit",RR
+178,Laval,QC,24,171,"Private, for profit",RR
+179,Burnaby,BC,24,66,Private,LTC
+180,Laval,QC,24,96,"Private, subsidized",LTC
+181,Laval,QC,24,98,Public,LTC
+182,Calgary,AB,24,112,"Private, for profit",LTC
+183,Montreal,QC,24,145,Public,LTC
+184,Surrey,BC,24,156,"Private, for profit",LTC
+185,Mississauga,ON,24,192,"Private, for profit",LTC
+186,North York,ON,24,192,Public,LTC
+187,Brossard,QC,24,234,Public,LTC
+188,Pointe Claire,QC,23,126,"Private, for profit",RR
+189,Saint-Lambert,QC,23,172,"Private, for profit",RI
+190,Montreal,QC,23,70,Public,LTC
+191,Montreal,QC,23,88,"Private, not subsidized",LTC
+192,Winnipeg,MB,23,91,"Private, for profit",LTC
+193,Saint-Lambert,QC,23,94,"Private, for profit",LTC
+194,Vancouver,BC,23,126,Public,LTC
+195,Longueuil,QC,23,142,Public,LTC
+196,Tecumseh,ON,23,142,"Private, for profit",LTC
+197,Thunder Bay,ON,23,157,"Private, for profit",LTC
+198,Mississauga,ON,23,180,"Private, for profit",LTC
+199,Scarborough,ON,23,204,"Private, for profit",LTC
+200,Montreal,QC,23,260,"Private, subsidized",LTC
+201,Toronto,ON,22,338,"Private, for profit",RR
+202,Quebec City,QC,22,29,Public,LTC
+203,Quebec City,QC,22,71,Public,LTC
+204,LaSalle,QC,22,78,"Private, not subsidized",LTC
+205,Montreal,QC,22,96,"Private, subsidized",LTC
+206,Chicoutimi,QC,22,98,Public,LTC
+207,St-Augustin,QC,22,100,"Private, subsidized",LTC
+208,Montreal,QC,22,126,Public,LTC
+209,Saint-Charles-Borromée,QC,22,166,Public,LTC
+210,Toronto,ON,22,228,"Private, not for profit",LTC
+211,Calgary,AB,22,328,"Private, for profit",LTC
+212,Ottawa,ON,22,569,Public Hospital,HOSP
+213,Saint-Basile-le-Grand,QC,21,121,"Private, for profit",RR
+214,Laval,QC,21,50,"Private, not subsidized",LTC
+215,Coquitlam,BC,21,56,Private,LTC
+216,Shelburne,ON,21,60,"Private, for profit",LTC
+217,Acton Vale,QC,21,77,Public,LTC
+218,Montreal,QC,21,80,"Private, subsidized",LTC
+219,Winnipeg,MB,21,84,Private,LTC
+220,Mississauga,ON,21,86,"Private, for profit",LTC
+221,Montreal,QC,21,93,"Private, subsidized",LTC
+222,Montreal,QC,21,96,Public,LTC
+223,Oakville,ON,21,128,"Private, not for profit",LTC
+224,Scarborough,ON,21,128,"Private, not for profit",LTC
+225,Newmarket,ON,21,192,Public Hospital,HOSP
+226,Montreal,QC,21,499,Public Hospital,HOSP
+227,Montreal,QC,20,165,"Private, for profit",RR
+228,Salaberry-de-Valleyfield,QC,20,166,"Private, for profit",RR
+229,Victoriaville,QC,20,233,"Private, for profit",RR
+230,Saint-Lambert,QC,20,418,"Private, for profit",RR
+231,Verdun,QC,20,110,Public,RI
+232,"High River, AB",AB,20,50,Public,LTC
+233,Welland,ON,20,96,"Private, for profit",LTC
+234,Toronto,ON,20,100,"Private, not for profit",LTC
+235,Tillsonburg,ON,20,106,"Private, for profit",LTC
+236,Montreal,QC,20,128,"Private, subsidized",LTC
+237,Terrebonne,QC,20,140,"Private, subsidized",LTC
+238,Oakville,ON,20,168,"Private, for profit",LTC
+239,North Vancouver,BC,20,204,Private,LTC
+240,Ottawa,ON,20,242,"Private, for profit",LTC
+241,Niagara Falls,ON,19,95,"Private, for profit",RR
+242,Westmount,QC,19,180,"Private, for profit",RR
+243,Saint-Eustache,QC,19,200,"Private, for profit",RR
+244,Gatineau,QC,19,236,"Private, for profit",RR
+245,Montreal,QC,19,252,"Private, for profit",RR
+246,Chicoutimi,QC,19,404,"Private, for profit",RR
+247,Vaudreuil-Dorion,QC,19,51,"Private, not subsidized",LTC
+248,Montreal,QC,19,64,Private,LTC
+249,Arthur,ON,19,80,"Private, for profit",LTC
+250,Saint-André-Avellin,QC,19,96,Public,LTC
+251,Markham,ON,19,96,"Private, not for profit",LTC
+252,Woodslee,ON,19,104,"Private, for profit",LTC
+253,Montreal,QC,19,105,Public,LTC
+254,Delaware,ON,19,105,"Private, for profit",LTC
+255,Toronto,ON,19,126,"Private, not for profit",LTC
+256,Toronto,ON,19,126,"Private, for profit",LTC
+257,Repentigny,QC,19,138,Public,LTC
+258,Kitchener,ON,19,150,"Private, not for profit",LTC
+259,Vancouver,BC,19,151,"Private, not for profit",LTC
+260,Kitchener,ON,19,161,"Private, for profit",LTC
+261,Hawkesbury,ON,19,162,Public,LTC
+262,Ancaster,ON,19,169,"Private, for profit",LTC
+263,Toronto,ON,19,238,"Private, for profit",LTC
+264,Calgary,AB,19,1081,Public,LTC
+265,Quebec City,QC,19,NA,Public Hospital,HOSP
+266,Quebec City,QC,18,64,"Private, for profit",RR
+267,Joliette,QC,18,160,"Private, for profit",RR
+268,Cap-St-Ignace,QC,18,43,"Private, subsidized",LTC
+269,L'Île-Perrot,QC,18,80,Public,LTC
+270,Lindsay,ON,18,96,"Private, for profit",LTC
+271,Toronto,ON,18,108,"Private, for profit",LTC
+272,Burnaby,BC,18,144,"Private, not for profit",LTC
+273,Toronto,ON,18,150,"Private, not for profit",LTC
+274,East York,ON,18,158,"Private, for profit",LTC
+275,Montreal,QC,18,162,Public,LTC
+276,"Bradford, ON",ON,18,246,"Private, for profit",LTC
+277,Brandon,MB,18,248,Public,LTC
+278,Toronto,ON,18,426,Public Hospital,HOSP
+279,Montérégie-Centre,QC,18,NA,Public Hospital,HOSP
+280,Laval,QC,17,706,"Private, for profit",RR
+281,Laval,QC,17,93,"Private, for profit",RI
+282,Edmonton,AB,17,50,"Private, for profit",LTC
+283,Kapuskasing,ON,17,61,"Private, for profit",LTC
+284,Prince Rupert,BC,17,61,Public,LTC
+285,Montreal,QC,17,64,"Private, subsidized",LTC
+286,Prince George,BC,17,66,Public,LTC
+287,North York,ON,17,75,"Private, for profit",LTC
+288,Oliver,BC,17,75,Public,LTC
+289,Cambridge,ON,17,79,"Private, for profit",LTC
+290,Montreal,QC,17,80,"Private, subsidized",LTC
+291,Langley,BC,17,96,Private,LTC
+292,Uxbridge,ON,17,100,"Private, for profit",LTC
+293,Toronto,ON,17,120,"Private, not for profit",LTC
+294,Varennes,QC,17,122,Public,LTC
+295,Montreal,QC,17,125,Public,LTC
+296,Hamilton,ON,17,127,"Private, not for profit",LTC
+297,Montreal,QC,17,147,Public,LTC
+298,Edmonton,AB,17,147,"Private, not for profit",LTC
+299,Montreal,QC,17,150,"Private, subsidized",LTC
+300,Mississauga,ON,17,160,"Private, not for profit",LTC
+301,Saint-Eustache,QC,17,195,Public,LTC
+302,Winnipeg,MB,17,245,"Private, for profit",LTC
+303,Richmond,BC,17,250,Public,LTC
+304,Toronto,ON,16,52,"Private, for profit",RR
+305,Hamilton,ON,16,64,"Private, for profit",RR
+306,Victoriaville,QC,16,168,"Private, for profit",RR
+307,Etobicoke,ON,16,250,"Private, for profit",RR
+308,Quebec City,QC,16,254,"Private, for profit",RR
+309,Ottawa,ON,16,71,"Private, not for profit",LTC
+310,Winnipeg,MB,16,80,Private,LTC
+311,Burnaby,BC,16,81,Public,LTC
+312,Winnipeg,MB,16,88,"Private, not for profit",LTC
+313,St. Catharines,ON,16,106,"Private, not for profit",LTC
+314,Saint-Lin,QC,16,112,Public,LTC
+315,Dorval,QC,16,119,Public,LTC
+316,Fort Saskatchewan,AB,16,122,"Private, for profit",LTC
+317,Montreal,QC,16,158,Public,LTC
+318,Vancouver,BC,16,188,"Private, not for profit",LTC
+319,Windsor,ON,16,231,"Private, for profit",LTC
+320,Toronto,ON,16,337,Public,LTC
+321,Winnipeg,MB,16,344,Public,LTC
+322,Edmonton,AB,16,352,Public,LTC
+323,Regina,SK,16,NA,NA,LTC
+324,Toronto,ON,16,192,Public Hospital,HOSP
+325,Salaberry-de-Valleyfield,QC,15,50,"Private, for profit",RR
+326,Montreal,QC,15,99,"Private, for profit",RR
+327,Montreal,QC,15,166,"Private, for profit",RR
+328,Laval,QC,15,252,"Private, for profit",RR
+329,Montreal North,QC,15,443,"Private, for profit",RR
+330,Montreal,QC,15,500,"Private, for profit",RR
+331,Quebec City,QC,15,64,Public,LTC
+332,Salaberry-de-Valleyfield,QC,15,66,"Private, not subsidized",LTC
+333,Lanoraie,QC,15,75,Public,LTC
+334,Newmarket,ON,15,93,"Private, for profit",LTC
+335,Montreal,QC,15,96,Public,LTC
+336,Leduc,AB,15,102,"Private, not for profit",LTC
+337,Saint-Sauveur,QC,15,103,"Private, not subsidized",LTC
+338,Montreal,QC,15,112,Private,LTC
+339,Mississauga,ON,15,118,"Private, for profit",LTC
+340,Montreal,QC,15,140,"Private, subsidized",LTC
+341,Edmonton,AB,15,147,"Private, not for profit",LTC
+342,St. Albert,AB,15,208,"Private, for profit",LTC
+343,Calgary,AB,15,210,"Private, not for profit",LTC
+344,Quebec City,QC,15,425,Private,LTC
+345,Châteauguay,QC,15,250,Public Hospital,HOSP
+346,Winnipeg,MB,15,800,Public Hospital,HOSP
+347,Trois-Rivières,QC,14,70,"Private, for profit",RR
+348,Stratford,ON,14,80,Private,RR
+349,Quebec City,QC,14,84,"Private, for profit",RR
+350,Magog,QC,14,102,"Private, for profit",RR
+351,Outaouais,QC,14,107,"Private, for profit",RR
+352,Quebec City,QC,14,192,"Private, for profit",RR
+353,Sainte-Thérèse,QC,14,53,"Private, for profit",RI
+354,Montreal,QC,14,183,Public,RI
+355,Listowel,ON,14,52,"Private, for profit",LTC
+356,Toronto,ON,14,57,"Private, for profit",LTC
+357,Barrie,ON,14,57,"Private, for profit",LTC
+358,Lancaster,ON,14,60,"Private, for profit",LTC
+359,Fort Erie,ON,14,68,"Private, for profit",LTC
+360,Ormstown,QC,14,72,Public,LTC
+361,St. Catharines,ON,14,82,"Private, not for profit",LTC
+362,Vancouver,BC,14,90,"Private, for profit",LTC
+363,Calgary,AB,14,93,"Private, for profit",LTC
+364,St-Georges,QC,14,100,"Private, subsidized",LTC
+365,Blainville,QC,14,105,"Private, not subsidized",LTC
+366,Port Perry,ON,14,107,"Private, for profit",LTC
+367,Brampton,ON,14,120,"Private, not for profit",LTC
+368,Quebec City,QC,14,132,Public,LTC
+369,Laval,QC,14,149,Private,LTC
+370,Etobicoke,ON,14,150,Public,LTC
+371,Scarborough,ON,14,154,"Private, for profit",LTC
+372,Toronto,ON,14,192,"Private, for profit",LTC
+373,Markham,ON,14,192,"Private, for profit",LTC
+374,Montreal,QC,14,196,Public,LTC
+375,Oshawa,ON,14,200,Public,LTC
+376,Toronto,ON,14,205,"Private, for profit",LTC
+377,Winnipeg,MB,14,554,"Private, not for profit",LTC
+378,Niagara Falls,ON,14,75,Public Hospital,HOSP
+379,Montreal,QC,13,122,"Private, for profit",RR
+380,Montreal,QC,13,128,"Private, for profit",RR
+381,Nepean,ON,13,180,"Private, for profit",RR
+382,Salaberry-de-Valleyfield,QC,13,238,"Private, for profit",RR
+383,Saint-Jean-sur-Richelieu,QC,13,262,"Private, for profit",RR
+384,Ste-Marie,QC,13,283,"Private, for profit",RR
+385,Montreal,QC,13,572,"Private, for profit",RR
+386,Ste-Adele,QC,13,75,Private,RI
+387,Montreal,QC,13,87,Private,RI
+388,Saint-Victor,QC,13,91,"Private, not for profit",RI
+389,St-Hyacinthe,QC,13,192,Private,RI
+390,Saint-Tite,QC,13,28,Public,LTC
+391,Laval,QC,13,68,"Private, not subsidized",LTC
+392,Aurora,ON,13,84,"Private, for profit",LTC
+393,Montreal,QC,13,96,"Private, subsidized",LTC
+394,Vancouver,BC,13,106,"Private, for profit",LTC
+395,Niagara-on-the-Lake,ON,13,124,"Private, for profit",LTC
+396,Tecumseh,ON,13,128,"Private, for profit",LTC
+397,Mississauga,ON,13,140,"Private, for profit",LTC
+398,Sorel-Tracy,QC,13,149,Public,LTC
+399,Toronto,ON,13,250,Public,LTC
+400,Ottawa,ON,13,450,"Private, not for profit",LTC
+401,Edmonton,AB,13,869,Public Hospital,HOSP
+402,Burlington,ON,13,463,"Private, for profit",LTC
+403,Kelowna,BC,13,139,"Private, for profit",LTC
+404,Saint-Charles-Borromée,QC,12,22,"Private, for profit",RR
+405,Sainte-Julie,QC,12,64,"Private, for profit",RR
+406,Lavaltrie,QC,12,77,"Private, for profit",RR
+407,Camrose,AB,12,82,"Private, for profit",RR
+408,Edmonton,AB,12,89,"Private, for profit",RR
+409,Sherbrooke,QC,12,93,"Private, not for profit",RR
+410,Quebec City,QC,12,97,"Private, for profit",RR
+411,Edmonton,AB,12,114,"Private, for profit",RR
+412,Montreal,QC,12,132,"Private, for profit",RR
+413,Montreal,QC,12,533,"Private, for profit",RR
+414,King City,ON,12,36,"Private, for profit",LTC
+415,Oakbank,MB,12,40,"Privte, not for profit",LTC
+416,Edmonton,AB,12,48,Public,LTC
+417,Quebec City,QC,12,60,Public,LTC
+418,St-Raymond,QC,12,64,Public,LTC
+419,White Rock,BC,12,71,"Private, for profit",LTC
+420,St-Jerôme,QC,12,79,Public,LTC
+421,Woodbridge,ON,12,100,"Private, not for profit",LTC
+422,Edmonton,AB,12,100,"Private, for profit",LTC
+423,Surrey,BC,12,131,Private,LTC
+424,Surrey,BC,12,131,"Private, for profit",LTC
+425,Winnipeg,MB,12,140,"Private, not for profit",LTC
+426,Vancouver,BC,12,156,"Private, for profit",LTC
+427,Edmonton,AB,12,172,"Private, for profit",LTC
+428,Calgary,AB,12,179,"Private, for profit",LTC
+429,Scarborough,ON,12,197,"Private, for profit",LTC
+430,Winnipeg,MB,12,200,Public,LTC
+431,Edmonton,AB,12,206,"Private, not for profit",LTC
+432,Calgary,AB,12,221,Public,LTC
+433,Aurora,ON,12,235,"Private, for profit",LTC
+434,Burnaby,BC,12,240,"Public, not for profit",LTC
+435,Toronto,ON,12,350,"Private, not for profit",LTC
+436,Ottawa,ON,12,549,Public Hospital,LTC
+437,Burnaby,BC,12,286,Public Hospital,HOSP
+438,Montreal,QC,11,115,"Private, for profit",RR
+439,Montreal,QC,11,120,"Private, for profit",RR
+440,Quebec City,QC,11,277,"Private, for profit",RR
+441,Drummondville,QC,11,377,"Private, for profit",RR
+442,Quebec City,QC,11,617,"Private, for profit",RR
+443,Saint-Laurent,QC,11,32,"Private, subsidized",LTC
+444,Quebec City,QC,11,53,Public,LTC
+445,Sainte-Marie-Salomé,QC,11,58,Public,LTC
+446,Plantagenet,ON,11,60,"Private, for profit",LTC
+447,St. Catharines,ON,11,65,"Private, for profit",LTC
+448,Montreal,QC,11,75,Public,LTC
+449,"Saint-Romuald, QC",QC,11,96,"Private, subsidized",LTC
+450,Woodbridge,ON,11,101,"Private, for profit",LTC
+451,Edmonton,AB,11,102,"Private, for profit",LTC
+452,Granit,QC,11,114,Public,LTC
+453,Edmonton,AB,11,120,Private,LTC
+454,Trois-Rivières,QC,11,122,Public,LTC
+455,Saint-Jean-sur-Richelieu,QC,11,175,Public,LTC
+456,London,ON,11,126,"Private, for profit",LTC
+457,Ancaster,ON,11,128,"Private, for profit",LTC
+458,Toronto,ON,11,130,"Private, for profit",LTC
+459,Edmonton,AB,11,141,Public,LTC
+460,Brampton,ON,11,147,"Private, for profit",LTC
+461,Winnipeg,QC,11,148,"Private, not for profit",LTC
+462,Georgetown,ON,11,154,"Private, for profit",LTC
+463,Brampton,ON,11,159,"Private, for profit",LTC
+464,East York,ON,11,160,"Private, for profit",LTC
+465,Montreal,QC,11,162,"Private, subsidized",LTC
+466,Windsor,ON,11,192,"Private, for profit",LTC
+467,Calgary,AB,11,222,"Private, for profit",LTC
+468,Montreal,QC,11,237,"Private, not subsidized",LTC
+469,London,ON,11,247,"Private, for profit",LTC
+470,Hamilton,ON,11,270,Public,LTC
+471,Abbotsford,BC,11,700,"Private, not for profit",LTC
+472,Penetanguishine,ON,11,301,Public Hospital,HOSP
+473,Winnipeg,MB,11,304,Public Hospital,HOSP
+474,Quebec City,QC,10,54,"Private, for profit",RR
+475,Salaberry-de-Valleyfield,QC,10,75,"Private, for profit",RR
+476,Dollard-des-Ormeaux,QC,10,78,"Private, for profit",RR
+477,Vaudreuil-Dorion,QC,10,80,"Private, for profit",RR
+478,Montreal,QC,10,85,"Private, for profit",RR
+479,Hamilton,ON,10,86,"Private, for profit",RR
+480,Chateau-Richer,QC,10,133,"Private, for profit",RR
+481,Quebec City,QC,10,142,"Private, not for profit",RR
+482,Welland,ON,10,160,"Private, for profit",RR
+483,Georgetown,ON,10,170,"Private, for profit",RR
+484,Longueuil,QC,10,201,"Private, for profit",RR
+485,Woodbridge,ON,10,248,"Private, for profit",RR
+486,Montreal,QC,10,289,"Private, for profit",RR
+487,Welland,ON,10,536,"Private, for profit",RR
+488,Laval,QC,10,982,"Private, for profit",RR
+489,Montreal,QC,10,104,"Private, for profit",RI
+490,McLennan,AB,10,22,"Private, for profit",LTC
+491,Gilbert Plains,MB,10,30,"Private, not for profit",LTC
+492,Longueuil,QC,10,37,Private,LTC
+493,Etobicoke,ON,10,45,"Private, for profit",LTC
+494,Edmunston,NB,10,61,Private,LTC
+495,Ottawa,ON,10,64,"Private, for profit",LTC
+496,Montreal,QC,10,77,Public,LTC
+497,Niverville,MB,10,80,Public,LTC
+498,Vernon,BC,10,85,Public,LTC
+499,Langley,BC,10,92,"Private, for profit",LTC
+500,St-Jerôme,QC,10,96,Public,LTC
+501,Tavistock,ON,10,100,"Private, for profit",LTC
+502,Montreal,QC,10,110,Public,LTC
+503,Sherwood Park,AB,10,111,Public,LTC
+504,Beeton,ON,10,126,Public,LTC
+505,Sarnia,ON,10,146,"Private, not for profit",LTC
+506,Etobicoke,ON,10,152,"Private, not for profit",LTC
+507,Surrey,BC,10,175,"Private, for profit",LTC
+508,Edmonton,AB,10,188,Public,LTC
+509,Guelph,ON,10,192,"Private, for profit",LTC
+510,Winnipeg,MB,10,218,"Private, for profit",LTC
+511,Quebec City,QC,10,226,Public,LTC
+512,Toronto,ON,10,252,"Private, not for profit",LTC
+513,Edmonton,AB,10,502,Public,LTC
+514,Ottawa,ON,10,NA,Public Hospital,HOSP
+515,Langley,BC,10,224,Public Hospital,HOSP
+516,Montreal,QC,9,18,"Private, not for profit",RR
+517,Montreal,QC,9,38,"Private, not for profit",RR
+518,Quebec City,QC,9,41,"Private, for profit",RR
+519,Sorel-Tracy,QC,9,50,"Private, for profit",RR
+520,Saint-Hubert,QC,9,50,"Private, for profit",RR
+521,Beauharnois,QC,9,64,"Private, for profit",RR
+522,Quebec City,QC,9,72,"Private, for profit",RR
+523,Louiseville,QC,9,77,"Private, for profit",RR
+524,Beauport,QC,9,95,"Private, for profit",RR
+525,Mississauga,ON,9,98,"Private, for profit",RR
+526,Drummondville,QC,9,108,"Private, for profit",RR
+527,Trois-Rivières,QC,9,118,"Private, for profit",RR
+528,Alma,QC,9,124,"Private, for profit",RR
+529,Montreal,QC,9,151,"Private, for profit",RR
+530,Longueuil,QC,9,160,"Private, for profit",RR
+531,Edmonton,AB,9,166,"Private, for profit",RR
+532,Quebec City,QC,9,190,"Private, for profit",RR
+533,Edmonton,AB,9,213,"Private, for profit",RR
+534,Montreal,QC,9,229,"Private, for profit",RR
+535,Joliette,QC,9,304,"Private, for profit",RR
+536,Kitchener,ON,9,95,"Private, for profit",RR
+537,Lanaudière,QC,9,80,"Private, for profit",RI
+538,Montreal,QC,9,122,"Private, for profit",RI
+539,Rivière-Rouge,QC,9,NA,NA,LTC
+540,McCreary,MB,9,20,"Private, not for profit",LTC
+541,Boucherville,QC,9,25,Public,LTC
+542,East Broughton,QC,9,30,Public,LTC
+543,Montreal,QC,9,31,Public,LTC
+544,Sainte-Hénédine,QC,9,34,Public,LTC
+545,St-Antoine-sur-Richelieu,QC,9,36,"Private, subsidized",LTC
+546,Lambton,QC,9,40,Public,LTC
+547,Toronto,ON,9,60,"Private, for profit",LTC
+548,Steinbach,MB,9,60,"Private, not for profit",LTC
+549,Grande Prairie,AB,9,60,"Private, for profit",LTC
+550,Granby,QC,9,74,Public,LTC
+551,Airdrie,AB,9,74,"Private, not for profit",LTC
+552,Vernon,BC,9,75,"Private, for profit",LTC
+553,Calgary,AB,9,76,"Private, not for profit",LTC
+554,Kitchener,ON,9,80,"Private, not for profit",LTC
+555,Fort Erie,ON,9,80,Public,LTC
+556,Saskatoon,SK,9,82,"Private, for profit",LTC
+557,Brooks,AB,9,84,"Private, for profit",LTC
+558,Montreal,QC,9,93,"Private, subsidized",LTC
+559,Laval,QC,9,96,Public,LTC
+560,Coaticook,QC,9,96,Public,LTC
+561,Winnipeg,MB,9,100,Public,LTC
+562,Toronto,ON,9,103,"Private, not for profit",LTC
+563,Welland,ON,9,120,Public,LTC
+564,Saskatoon,SK,9,129,Private,LTC
+565,Rosemère,QC,9,154,Public,LTC
+566,Saint John,NB,9,161,"Private, for profit",LTC
+567,Surrey,BC,9,193,Private,LTC
+568,Ottawa,ON,9,198,"Private, not for profit",LTC
+569,Ottawa,ON,9,211,Public,LTC
+570,Verdun,QC,9,220,Public,LTC
+571,Windsor,ON,9,224,Public,LTC
+572,Dundas,ON,9,390,Public,LTC
+573,Toronto,ON,9,472,"Private, not for profit",LTC
+574,Hamilton,ON,9,NA,Public Hospital,HOSP
+575,Stouffville,ON,9,NA,Public Hospital,HOSP
+576,Vancouver,BC,9,268,Public Hospital,HOSP
+577,Ottawa,ON,9,336,Public Hospital,HOSP
+578,Oliver,BC,8,51,Public,RR
+579,Saint-Eustache,QC,8,59,"Private, for profit",RR
+580,Longueuil,QC,8,82,"Private, for profit",RR
+581,VIctoriaville,QC,8,99,"Private, for profit",RR
+582,Saint-Hyacinthe,QC,8,130,"Private, for profit",RR
+583,Toronto,ON,8,135,"Private, not for profit",RR
+584,Perth,ON,8,139,"Private, for profit",RR
+585,Saint-Raymond,QC,8,152,"Private, for profit",RR
+586,Scarborough,ON,8,168,"Private, for profit",RR
+587,Windsor,ON,8,172,"Private, for profit",RR
+588,Baie-St-Paul,QC,8,183,"Private, for profit",RR
+589,Asbestos,QC,8,200,"Private, for profit",RR
+590,Chicoutimi,QC,8,235,"Private, for profit",RR
+591,Toronto,ON,8,236,"Private, for profit",RR
+592,Lévis,QC,8,291,"Private, for profit",RR
+593,Montreal,QC,8,367,"Private, for profit",RR
+594,Longueuil,QC,8,414,"Private, for profit",RR
+595,Sherbrooke,QC,8,444,"Private, for profit",RR
+596,Montreal,QC,8,849,"Private, for profit",RR
+597,Calgary,AB,8,NA,"Private, for profit",RR
+598,East York,ON,8,25,"Private, not for profit",LTC
+599,Toronto,ON,8,34,"Private, not for profit",LTC
+600,Grunthal,MB,8,40,"Private, not for profit",LTC
+601,Mayerthorpe,AB,8,50,"Private, for profit",LTC
+602,Saskatoon,SK,8,60,"Private, not for profit",LTC
+603,Carleton Place,ON,8,60,"Private, for profit",LTC
+604,Steinbach,MB,8,60,"Private, not for profit",LTC
+605,Burlington,ON,8,61,"Private, not for profit",LTC
+606,Hamilton,ON,8,64,"Private, for profit",LTC
+607,Mont-Tremblant,QC,8,71,Public,LTC
+608,Calgary,AB,8,85,Public,LTC
+609,Bolton,ON,8,86,"Private, for profit",LTC
+610,Maria,QC,8,95,Public,LTC
+611,Matane,QC,8,106,Public,LTC
+612,Grande Prairie,AB,8,145,"Private, for profit",LTC
+613,Calgary,AB,8,145,"Private, not for profit",LTC
+614,Maple Ridge,BC,8,148,Public,LTC
+615,Toronto,ON,8,150,"Private, for profit",LTC
+616,Edmonton,AB,8,154,"Private, for profit",LTC
+617,Scarborough,ON,8,166,"Private, not for profit",LTC
+618,Edmonton,AB,8,172,Private,LTC
+619,Saint-Jérôme,QC,8,212,Public,LTC
+620,Delta,BC,8,220,"Private, not for profit",LTC
+621,Ottawa,ON,8,NA,Public Hospital,HOSP
+622,Midland,ON,8,105,Public Hospital,HOSP
+623,Welland,ON,8,115,Public Hospital,HOSP
+624,Prince George,BC,8,219,Public Hospital,HOSP
+625,Lévis,QC,8,349,Public Hospital,HOSP
+626,Montreal,QC,8,NA,Public,HOSP
+627,West Kelowna,BC,7,NA,NA,NA
+628,Waterloo,ON,7,21,"Private, for profit",RR
+629,Toronto,ON,7,30,"Private, for profit",RR
+630,Guelph,ON,7,41,"Private, for profit",RR
+631,Elmira,ON,7,48,"Private, for profit",RR
+632,Pickering,ON,7,61,"Private, for profit",RR
+633,Boucherville,QC,7,64,"Private, for profit",RR
+634,Saint-Hyacinthe,QC,7,80,"Private, for profit",RR
+635,Windsor,ON,7,84,"Private, for profit",RR
+636,Montreal,QC,7,85,"Private, for profit",RR
+637,Boucherville,QC,7,93,"Private, for profit",RR
+638,Ottawa,ON,7,94,"Private, for profit",RR
+639,Sudbury,ON,7,95,"Private, for profit",RR
+640,Oakville,ON,7,118,"Private, for profit",RR
+641,Gaspé,QC,7,123,"Private, for profit",RR
+642,Ottawa,ON,7,194,"Private, for profit",RR
+643,Shawinigan,QC,7,205,"Private, for profit",RR
+644,Matane,QC,7,209,"Private, for profit",RR
+645,Montreal,QC,7,269,"Private, for profit",RR
+646,Trois-Rivières,QC,7,289,"Private, for profit",RR
+647,Sainte-Thérèse,QC,7,289,"Private, for profit",RR
+648,Montreal,QC,7,449,"Private, for profit",RR
+649,Montreal,QC,7,451,"Private, for profit",RR
+650,Brossard,QC,7,837,"Private, for profit",RR
+651,Laval,QC,7,NA,"Private, for profit",RI
+652,Saint-Eustache,QC,7,NA,NA,RI
+653,Quebec City,QC,7,NA,"Private, subsidized",LTC
+654,Lanaudière,QC,7,NA,Public,LTC
+655,Dolbeau-Mistassini,QC,7,NA,Public,LTC
+656,Edmonton,AB,7,NA,"Private, not for profit",LTC
+657,Edmonton,AB,7,NA,"Private, not for profit",LTC
+658,Edmonton,AB,7,NA,NA,LTC
+659,Alma,QC,7,33,Public,LTC
+660,Wakaw,SK,7,44,Private,LTC
+661,Seaforth,ON,7,63,"Private, for profit",LTC
+662,Brossard,QC,7,64,"Private, subsidized",LTC
+663,Saint-Hyacinthe,QC,7,70,Public,LTC
+664,Windsor,ON,7,72,"Private, for profit",LTC
+665,Lac-Etchemin,QC,7,83,Public,LTC
+666,Winnipeg,MB,7,86,"Private, for profit",LTC
+667,Richmond,BC,7,105,"Private, for profit",LTC
+668,Saint-Jean-sur-Richelieu,QC,7,107,Public,LTC
+669,Long Sault,ON,7,119,"Private, for profit",LTC
+670,Saint-Lambert,QC,7,120,Private,LTC
+671,Ottawa,ON,7,128,"Private, not for profit",LTC
+672,Edmonton,AB,7,132,Private,LTC
+673,Winnipeg,MB,7,136,"Private, not for profit",LTC
+674,Coquitlam,BC,7,137,"Private, for profit",LTC
+675,Brampton,ON,7,177,Public,LTC
+676,White Rock,BC,7,249,"Private, not for profit",LTC
+677,Edmonton,AB,7,275,Public,LTC
+678,Prince Albert,SK,7,NA,NA,LTC
+679,Delta,BC,7,80,Public Hospital,HOSP
+680,Vancouver,BC,7,153,Public Hospital,HOSP
+681,Scarborough,ON,7,213,Public Hospital,HOSP
+682,Barrie,ON,7,319,Public Hospital,HOSP
+683,Sainte-Anne-de-Bellevue,QC,7,446,Public Hospital,HOSP
+684,Markham,ON,7,NA,AL,AL
+685,Toronto,ON,6,NA,"Private, for profit",RR
+686,Sarnia,ON,6,NA,"Private, for profit",RR
+687,Brampton,ON,6,NA,"Private, for profit",RR
+688,Montreal,QC,6,14,"Private, for profit",RR
+689,Laval,QC,6,21,"Private, for profit",RR
+690,Danville,QC,6,27,"Private, for profit",RR
+691,Quebec City,QC,6,30,"Private, for profit",RR
+692,Shawinigan,QC,6,54,"Private, for profit",RR
+693,Waterloo,QC,6,59,"Private, for profit",RR
+694,Saint-Jean-sur-Richelieu,QC,6,101,"Private, for profit",RR
+695,St. Catharines,ON,6,102,"Private, for profit",RR
+696,Montreal,QC,6,108,"Private, for profit",RR
+697,"Saint-Romuald, QC",QC,6,128,"Private, for profit",RR
+698,Medicine Hat,AB,6,139,"Private, for profit",RR
+699,La Prairie,QC,6,145,"Private, for profit",RR
+700,Lavaltrie,QC,6,153,"Private, for profit",RR
+701,Toronto,ON,6,156,"Private, for profit",RR
+702,Cowansville,QC,6,170,"Private, for profit",RR
+703,Lachute,QC,6,182,"Private, for profit",RR
+704,Jonquière,QC,6,204,"Private, for profit",RR
+705,Brossard,QC,6,217,"Private, for profit",RR
+706,Gatineau,QC,6,225,"Private, for profit",RR
+707,Vaudreuil-Dorion,QC,6,295,"Private, for profit",RR
+708,Longueuil,QC,6,345,"Private, for profit",RR
+709,Quebec City,QC,6,35,"Private, for profit",RR
+710,Guelph,ON,6,NA,"Private, for profit",RR
+711,Quebec City,QC,6,420,"Private, for profit",RI
+712,Montreal,QC,6,NA,NA,LTC
+713,Montreal,QC,6,NA,NA,LTC
+714,Lachute,QC,6,NA,Public,LTC
+715,Saint-Raphaël,QC,6,NA,NA,LTC
+716,Gracefield,QC,6,NA,Public,LTC
+717,Montreal,QC,6,NA,NA,LTC
+718,Port Coquitlam,BC,6,NA,"Private, for profit",LTC
+719,Edmonton,AB,6,NA,"Private, not for profit",LTC
+720,Maria,QC,6,21,"Private, for profit",LTC
+721,North Vancouver,BC,6,40,"Private, for profit",LTC
+722,Akwesasne,ON,6,50,Public,LTC
+723,Toronto,ON,6,60,"Private, for profit",LTC
+724,Montreal,QC,6,83,Public,LTC
+725,Toronto,ON,6,128,Public,LTC
+726,Coquitlam,BC,6,148,"Private, for profit",LTC
+727,Calgary,AB,6,155,"Private, for profit",LTC
+728,Niagara Falls,ON,6,161,"Private, for profit",LTC
+729,Toronto,ON,6,174,"Private, not for profit",LTC
+730,Quebec City,QC,6,NA,"Private, subsidized",LTC
+731,Montreal,QC,6,NA,NA,LTC
+732,Lachute,QC,6,NA,Public,LTC
+733,Grand Falls,NB,6,NA,NA,LTC
+734,Carman,MB,6,NA,NA,LTC
+735,Bonnyville,AB,6,NA,"Private, for profit",LTC
+736,Sainte-Agathe-des-Monts,QC,6,NA,Public Hospital,HOSP
+737,Kamloops,BC,6,NA,Public Hospital,HOSP
+738,Kelowna,BC,6,NA,NA,LTC
+739,Kelowna,BC,6,NA,NA,NA
+740,Saguenay,QC,5,NA,NA,RR
+741,Shawinigan,QC,5,NA,NA,RR
+742,Orangeville,ON,5,NA,NA,RR
+743,Guelph,ON,5,NA,"Private, for profit",RR
+744,Scarborough,ON,5,NA,NA,RR
+745,Sarnia,ON,5,NA,"Private, for profit",RR
+746,Saint-Mathieu,QC,5,16,"Private, for profit",RR
+747,Montreal,QC,5,25,"Private, for profit",RR
+748,Saint-Joseph-de-Lepage,QC,5,32,"Private, for profit",RR
+749,Trois-Rivières,QC,5,37,"Private, for profit",RR
+750,Boucherville,QC,5,38,"Private, for profit",RR
+751,Messines,QC,5,38,"Private, for profit",RR
+752,Boischatel,QC,5,40,"Private, for profit",RR
+753,Joliette,QC,5,48,"Private, for profit",RR
+754,Quebec City,QC,5,69,"Private, for profit",RR
+755,St. Albert,AB,5,70,"Private, for profit",RR
+756,Lac-Brome,QC,5,86,"Private, for profit",RR
+757,St-Joseph-de-Beauce,QC,5,88,"Private, for profit",RR
+758,Thunder Bay,ON,5,91,NA,RR
+759,Welland,ON,5,94,"Private, for profit",RR
+760,Montreal,QC,5,99,"Private, for profit",RR
+761,Kingsville,ON,5,102,"Private, for profit",RR
+762,Laval,QC,5,108,"Private, for profit",RR
+763,Montreal,QC,5,118,"Private, for profit",RR
+764,Toronto,ON,5,120,"Private, for profit",RR
+765,Drummondville,QC,5,128,"Private, for profit",RR
+766,Leamington,ON,5,132,"Private, for profit",RR
+767,Notre-Dame-des-Pins,QC,5,134,"Private, for profit",RR
+768,West Kelowna,BC,5,145,"Private, for profit",RR
+769,Saint-Georges,QC,5,146,"Private, for profit",RR
+770,Toronto,ON,5,153,"Private, for profit",RR
+771,Lévis,QC,5,154,"Private, for profit",RR
+772,Montreal,QC,5,166,"Private, for profit",RR
+773,Montreal,QC,5,173,"Private, for profit",RR
+774,Ste-Foy,QC,5,208,"Private, for profit",RR
+775,Montreal,QC,5,228,"Private, for profit",RR
+776,Sainte-Thérèse,QC,5,242,"Private, for profit",RR
+777,Montreal,QC,5,246,"Private, for profit",RR
+778,Montreal,QC,5,264,"Private, for profit",RR
+779,Laval,QC,5,303,"Private, for profit",RR
+780,Granby,QC,5,312,"Private, for profi",RR
+781,Ste-Foy,QC,5,380,"Private, for profit",RR
+782,Laval,QC,5,1312,"Private, for profit",RR
+783,Saint-Jean-sur-Richelieu,QC,5,NA,NA,RR
+784,Mississauga,ON,5,NA,"Private, for profit",RR
+785,Hamilton,ON,5,NA,NA,RR
+786,Thornhill,ON,5,NA,NA,RR
+787,St-Joseph-De-Beauce,QC,5,NA,NA,RI
+788,St-Jean-de-Dieu,QC,5,NA,NA,RI
+789,Montreal,QC,5,NA,NA,LTC
+790,Lachine,QC,5,NA,NA,LTC
+791,Calgary,AB,5,NA,Public,LTC
+792,Camrose,AB,5,NA,Private,LTC
+793,Bunibonibee Cree Nation,MB,5,35,Public,LTC
+794,Grandview,MB,5,39,"Private, not for profit",LTC
+795,Edmonton,AB,5,40,Public,LTC
+796,Calgary,AB,5,52,"Private, for profit",LTC
+797,Edmonton,AB,5,52,"Private, for profit",LTC
+798,Ste. Anne,MB,5,66,"Private, not for profit",LTC
+799,Surrey,BC,5,75,NA,LTC
+800,Toronto,ON,5,81,"Private, not for profit",LTC
+801,Port Hope,ON,5,97,"Private, for profit",LTC
+802,Wallaceburg,ON,5,99,"Private, for profit",LTC
+803,Delta,BC,5,104,"Private, for profit",LTC
+804,Red Deer,AB,5,114,"Private, for profit",LTC
+805,Winnipeg,MB,5,120,"Private, for profit",LTC
+806,Orillia,ON,5,122,Public,LTC
+807,Waterdown,ON,5,128,"Private, for profit",LTC
+808,Quebec City,QC,5,140,Public,LTC
+809,Mississauga,ON,5,142,Public,LTC
+810,Edmonton,AB,5,156,"Private, not for profit",LTC
+811,Toronto,ON,5,162,"Private, for profit",LTC
+812,Stoney Creek,ON,5,167,"private, not for profit",LTC
+813,Calgary,AB,5,175,Public,LTC
+814,London,ON,5,177,"Private, not for profit",LTC
+815,North Vancouver,BC,5,189,Public,LTC
+816,Cote St-Luc,QC,5,212,"Private, not subsidized",LTC
+817,Winnipeg,MB,5,235,"Private, not for profit",LTC
+818,Valcourt,QC,5,NA,NA,LTC
+819,Chicoutimi,QC,5,NA,Public,LTC
+820,Pickering,ON,5,NA,"Private, not for profit",LTC
+821,Windsor,ON,5,NA,NA,LTC
+822,Scarborough,ON,5,NA,Public Hospital,HOSP
+823,Burlington,ON,5,NA,Public Hospital,HOSP
+824,Toronto,ON,5,NA,Public Hospital,HOSP
+825,Toronto,ON,5,NA,Public Hospital,HOSP
+826,Winnipeg,MB,5,140,Public Hospital,HOSP
+827,Winnipeg,MB,5,554,Public Hospital,HOSP
+828,Outaouais,QC,5,NA,Public Hospital,HOSP
+829,Bas-Saint-Laurent,QC,5,NA,Public Hospital,HOSP
+830,Sherbrooke,QC,5,NA,Public Hospital,HOSP
+831,Georgetown,ON,5,NA,Public Hospital,HOSP
+832,Hawkesbury,ON,5,NA,Public Hospital,HOSP
+833,Palmerston,ON,5,NA,Public Hospital,HOSP
+834,Hamilton,ON,5,NA,Public Hospital,HOSP
+835,Hamilton,ON,5,NA,Public Hospital,HOSP
+836,Fort Saskatchewan,AB,5,NA,Public Hospital,HOSP
+837,Markham,ON,4,NA,"Private, for profit",RR
+838,London,ON,4,NA,"Private, for profit",RR
+839,Unionville,ON,4,NA,"Private, for profit",RR
+840,Windsor,ON,4,NA,NA,RR
+841,Kitchener,ON,4,NA,NA,RR
+842,Mississauga,ON,4,NA,NA,RR
+843,Toronto,ON,4,NA,NA,RR
+844,Jasper,AB,4,NA,NA,RR
+845,Edmonton,AB,4,NA,NA,RR
+846,Sorel-Tracy,QC,4,20,"Private, for profit",RR
+847,Mascouche,QC,4,21,"Private, for profit",RR
+848,Quebec City,QC,4,22,"Private, for profit",RR
+849,Saint-Rémi,QC,4,26,"Private, for profit",RR
+850,Richmond,QC,4,49,"Private, for profit",RR
+851,Repentigny,QC,4,50,"Private, for profit",RR
+852,Dolbeau-Mistassini,QC,4,53,"Private, not for profit",RR
+853,Lévis,QC,4,60,"Private, for profit",RR
+854,Montreal,QC,4,66,"Private, for profit",RR
+855,Granby,QC,4,68,"Private, for profit",RR
+856,Lévis,QC,4,70,"Private, not for profit",RR
+857,Château-Richer,QC,4,71,"Private, for profit",RR
+858,Boischatel,QC,4,72,"Private, for profit",RR
+859,Dolbeau-Mistassini,QC,4,72,"Private, for profit",RR
+860,Acton Vale,QC,4,99,"Private, for profit",RR
+861,Cote St-Luc,QC,4,99,"Private, for profit",RR
+862,Kanata,ON,4,100,"Private, for profit",RR
+863,Baie-D'Urfé,QC,4,103,"Private, for profit",RR
+864,Toronto,ON,4,107,"Private, for profit",RR
+865,Quebec City,QC,4,115,"Private, for profit",RR
+866,"Orleans, ON",ON,4,117,"Private, for profit",RR
+867,Lévis,QC,4,126,"Private, for profit",RR
+868,Montreal,QC,4,148,"Private, for profit",RR
+869,L'Épiphanie,QC,4,158,"Private, for profit",RR
+870,Saint-Jérôme,QC,4,192,"Private, for profit",RR
+871,Montreal,QC,4,209,"Private, for profit",RR
+872,Montreal,QC,4,219,"Private, for profit",RR
+873,Oakville,ON,4,224,"Private, for profit",RR
+874,Toronto,ON,4,246,"Private, for profit",RR
+875,Saint-Augustin-de-Desmaures,QC,4,277,"Private, for profit",RR
+876,Laval,QC,4,286,"Private, for profit",RR
+877,Montreal,QC,4,304,"Private, for profit",RR
+878,Montreal,QC,4,307,"Private, for profit",RR
+879,Rimouski,QC,4,349,"Private, for profit",RR
+880,Longueuil,QC,4,368,"Private, for profit",RR
+881,Montreal,QC,4,379,"Private, for profit",RR
+882,Montreal,QC,4,458,"Private, for profit",RR
+883,Montreal,QC,4,660,"Private, for profit",RR
+884,Saint-Charles-Borromée,QC,4,700,"Private, for profit",RR
+885,Chateauguay,QC,4,NA,NA,RI
+886,Hébertville,QC,4,NA,NA,RI
+887,Saint-Charles-Borromée,QC,4,NA,NA,RI
+888,Trois-Rivières,QC,4,NA,NA,LTC
+889,Montreal,QC,4,NA,"Private, for profit",LTC
+890,Beaconsfield,QC,4,NA,NA,LTC
+891,Sherbrooke,QC,4,NA,Public,LTC
+892,Lanaudière,QC,4,NA,NA,LTC
+893,Coquitlam,BC,4,NA,"Private, for profit",LTC
+894,Port Coquitlam,BC,4,NA,NA,LTC
+895,Red Deer,AB,4,NA,"Private, for profit",LTC
+896,Lethbridge,AB,4,NA,"Private, for profit",LTC
+897,Calgary,AB,4,NA,NA,LTC
+898,High Prairie,AB,4,27,Public,LTC
+899,Calgary,AB,4,NA,NA,LTC
+900,Edmonton,AB,4,NA,NA,LTC
+901,Lac La Biche,AB,4,39,Public,LTC
+902,Stratford,ON,4,45,"Private, not for profit",LTC
+903,Chicoutimi,QC,4,48,Private,LTC
+904,Edmonton,AB,4,77,"Private, not for profit",LTC
+905,Edmonton,AB,4,80,Public,LTC
+906,Morinville,AB,4,110,"Private, for profit",LTC
+907,Hamilton,ON,4,128,"Private, for profit",LTC
+908,Markham,ON,4,128,Public,LTC
+909,Newmarket,ON,4,132,Public,LTC
+910,Repentigny,QC,4,136,Public,LTC
+911,Burlington,ON,4,144,Public,LTC
+912,New Westminister,BC,4,148,Public,LTC
+913,Brampton,ON,4,159,"Private, for profit",LTC
+914,Edmonton,AB,4,180,"Private, not for profit",LTC
+915,Richmond Hill,ON,4,192,"Private, not for profit",LTC
+916,Markham,ON,4,200,"Private, not for profit",LTC
+917,Nepean,ON,4,217,"Private, for profit",LTC
+918,Calgary,AB,4,248,"Private, for profit",LTC
+919,Ottawa,ON,4,254,"Private, not for profit",LTC
+920,Lévis,QC,4,NA,NA,LTC
+921,Saint-Lambert,QC,4,NA,NA,LTC
+922,New Carlisle,QC,4,NA,NA,LTC
+923,Quebec City,QC,4,NA,NA,LTC
+924,Jonquière,QC,4,NA,NA,LTC
+925,Winnipeg,MB,4,NA,NA,LTC
+926,Steinbach,MB,4,NA,NA,LTC
+927,Edson,AB,4,NA,Public,LTC
+928,Edmonton,AB,4,NA,NA,LTC
+929,Edmonton,AB,4,NA,NA,LTC
+930,Vermillion,AB,4,NA,Punlic,LTC
+931,Edmonton,AB,4,NA,NA,LTC
+932,Calgary,AB,4,NA,NA,LTC
+933,Dawson Creek,BC,4,NA,NA,LTC
+934,Scarborough,ON,4,NA,Public Hospital,HOSP
+935,Morris,MB,4,NA,Public Hospital,HOSP
+936,Portage la Prairie,MB,4,NA,Public Hospital,HOSP
+937,Kelowna,BC,4,NA,Public Hospital,HOSP
+938,Saanich,BC,4,NA,Public Hospital,HOSP
+939,Montreal,QC,4,NA,Public Hospital,HOSP
+940,Toronto,ON,4,NA,Public Hospital,HOSP
+941,Sarnia,ON,4,NA,Public Hospital,HOSP
+942,Winnipeg,MB,4,NA,Public Hospital,HOSP
+943,Russel,MB,4,NA,Public,HOSP
+944,Thetford Mines,QC,3,NA,NA,RR
+945,Montreal,QC,3,NA,NA,RR
+946,Thetford Mines,QC,3,NA,NA,RR
+947,Bois-des-Filion,QC,3,NA,NA,RR
+948,Joliette,QC,3,NA,NA,RR
+949,Repentigny,QC,3,NA,NA,RR
+950,Quebec City,QC,3,NA,NA,RR
+951,Granby,QC,3,NA,NA,RR
+952,Brossard,QC,3,NA,NA,RR
+953,Saint-Michel-de-Squatic,QC,3,NA,NA,RR
+954,Longueuil,QC,3,NA,NA,RR
+955,Mississauga,ON,3,NA,"Private, for profit",RR
+956,Waterloo,ON,3,NA,"Private, for profit",RR
+957,Mississauga,ON,3,NA,"Private, for profit",RR
+958,Newmarket,ON,3,NA,"Private, for profit",RR
+959,Ottawa,ON,3,NA,"Private, for profit",RR
+960,Ottawa,ON,3,NA,NA,RR
+961,Toronto,ON,3,NA,Public,RR
+962,Uxbridge,ON,3,NA,NA,RR
+963,Ottawa,ON,3,NA,NA,RR
+964,Thornhill,ON,3,NA,NA,RR
+965,Sarnia,ON,3,NA,NA,RR
+966,Winnipeg,MB,3,NA,"Private, for profit",RR
+967,Winnipeg,MB,3,NA,NA,RR
+968,Calgary,AB,3,NA,"Private, for profit",RR
+969,Calgary,AB,3,NA,"Private, for profit",RR
+970,Thetford Mines,QC,3,5,"Private, for profit",RR
+971,Beaconsfield,QC,3,8,"Private, for profit",RR
+972,Quebec City,QC,3,9,"Private, for profit",RR
+973,Sainte-Marthe-sur-le-Lac,ON,3,12,"Private, for profit",RR
+974,Pont-Rouge,QC,3,14,"Private, for profit",RR
+975,Montreal,QC,3,15,"Private, for profit",RR
+976,Saint-Ludger,QC,3,28,"Private, for profit",RR
+977,Rigaud,QC,3,28,"Private, for profit",RR
+978,Laval,QC,3,30,"Private, for profit",RR
+979,Assomption,QC,3,32,"Private, for profit",RR
+980,Saint-Léonard-d'Aston,QC,3,40,"Private, not for profit",RR
+981,Longueuil,QC,3,43,Private,RR
+982,Sherbrooke,QC,3,45,"Private, for profit",RR
+983,Saint-Côme-Linéaire,QC,3,47,"Private, for profit",RR
+984,Granby,QC,3,48,"Private, for profit",RR
+985,Sorel-Tracy,QC,3,50,"Private, for profit",RR
+986,Saint-Jérôme,QC,3,64,"Private, for profit",RR
+987,Nicolet,QC,3,70,"Private, for profit",RR
+988,Quebec City,QC,3,71,"Private, for profit",RR
+989,Trois-Rivières,QC,3,73,"Private, for profit",RR
+990,Calgary,AB,3,73,"Private, for profit",RR
+991,Victoriaville or Trois-Rivi,QC,3,75,"Private, for profit",RR
+992,Saint-Charles-Borromée,QC,3,80,"Private, for profit",RR
+993,Granby,QC,3,85,"Private, for profit",RR
+994,Waterloo,QC,3,92,"Private, for profit",RR
+995,Gatineau,QC,3,105,"Private, for profit",RR
+996,Aurora,ON,3,113,"Private, for profit",RR
+997,Sorel-Tracy,QC,3,124,"Private, for profit",RR
+998,Saint-Rémi,QC,3,130,"Private, for profit",RR
+999,Mississauga,ON,3,144,"Private, for profit",RR
+1000,Saint-Jérôme,QC,3,145,"Private, for profit",RR
+1001,Quebec City,QC,3,153,"Private, for profit",RR
+1002,Ancienne-Lorette,QC,3,157,"Private, for profit",RR
+1003,Pointe Claire,QC,3,159,"Private, for profit",RR
+1004,Montreal,QC,3,181,"Private, for profit",RR
+1005,Kirkland,QC,3,189,"Private, for profit",RR
+1006,Lévis,QC,3,190,"Private, for profit",RR
+1007,Granby,QC,3,193,"Private, for profit",RR
+1008,Jonquière,QC,3,199,"Private, for profit",RR
+1009,Laval,QC,3,220,"Private, for profit",RR
+1010,Montreal,QC,3,224,"Private, for profit",RR
+1011,St-Nicolas,QC,3,254,"Private, for profit",RR
+1012,Saguenay,QC,3,256,"Private, for profit",RR
+1013,Aylmer,QC,3,263,"Private, for profit",RR
+1014,Mascouche,QC,3,293,"Private, for profit",RR
+1015,Louiseville,QC,3,303,"Private, for profit",RR
+1016,Montreal,QC,3,304,"Private, for profit",RR
+1017,L'Île-Perrot,QC,3,310,"Private, for profit",RR
+1018,Quebec City,QC,3,344,"Private, for profit",RR
+1019,Drummondville,QC,3,405,"Private, for profit",RR
+1020,Montreal,QC,3,409,"Private, for profit",RR
+1021,Laval,QC,3,587,"Private, for profit",RR
+1022,Trois-Pistoles,QC,3,84,"Private, for profit",RR
+1023,Burlington,ON,3,NA,"Private, for profit",RR
+1024,Lethbridge,AB,3,NA,NA,RR
+1025,Montreal,QC,3,NA,NA,RI
+1026,Lanaudière,QC,3,NA,NA,RI
+1027,Victoriaville,QC,3,41,Public,RI
+1028,Longueuil,QC,3,NA,NA,LTC
+1029,Huntingdon,QC,3,NA,NA,LTC
+1030,Gaspé,QC,3,NA,NA,LTC
+1031,Alma,QC,3,NA,NA,LTC
+1032,Blainville,QC,3,NA,NA,LTC
+1033,Salaberry-de-Valleyfield,QC,3,NA,NA,LTC
+1034,Maria,QC,3,NA,NA,LTC
+1035,Saint-Georges,QC,3,NA,NA,LTC
+1036,Sherbrooke,QC,3,NA,NA,LTC
+1037,North York,ON,3,NA,Public,LTC
+1038,Scarborough,ON,3,NA,Public,LTC
+1039,Calgary,AB,3,NA,"Private, for profit",LTC
+1040,Calgary,AB,3,NA,"Private, for profit",LTC
+1041,Calgary,AB,3,NA,NA,LTC
+1042,Calgary,AB,3,NA,NA,LTC
+1043,Edmonton,AB,3,NA,NA,LTC
+1044,La Crete,AB,3,NA,NA,LTC
+1045,Racine,QC,3,20,co-op,LTC
+1046,Exeter,ON,3,47,"Private, for profit",LTC
+1047,Vancouver,BC,3,64,"Private, not for profit",LTC
+1048,Saguenay,QC,3,96,Public,LTC
+1049,Gatineau,QC,3,100,"Private, subsidized",LTC
+1050,Windsor,ON,3,104,"Private, for profit",LTC
+1051,Waterloo,ON,3,160,"Private, for profit",LTC
+1052,Kanata,ON,3,160,"Private, for profit",LTC
+1053,Woodstock,ON,3,163,"Private, for profit",LTC
+1054,North York,ON,3,170,"Private, for profit",LTC
+1055,London,ON,3,192,"Private, for profit",LTC
+1056,Hamilton,ON,3,201,"Private, for profit",LTC
+1057,Belleville,ON,3,253,Public,LTC
+1058,Peterborough,ON,3,256,Public,LTC
+1059,Ottawa,ON,3,288,"Private, not for profit",LTC
+1060,Scarborough,ON,3,288,"Private, not for profit",LTC
+1061,Oakville,ON,3,288,Public,LTC
+1062,Disraeli,QC,3,NA,Public,LTC
+1063,Montreal,QC,3,NA,NA,LTC
+1064,Lac-Megantic,QC,3,NA,NA,LTC
+1065,Quebec City,QC,3,NA,Public,LTC
+1066,Beauceville,QC,3,NA,NA,LTC
+1067,Gatineau,QC,3,NA,NA,LTC
+1068,Ottawa,ON,3,NA,"Private, for profit",LTC
+1069,Winnipeg,MB,3,NA,NA,LTC
+1070,Calgary,AB,3,NA,NA,LTC
+1071,Edmonton,AB,3,NA,NA,LTC
+1072,Cowansville,QC,3,NA,Public Hospital,HOSP
+1073,Saint-Georges,QC,3,NA,Public Hospital,HOSP
+1074,Lanaudière,QC,3,NA,Public Hospital,HOSP
+1075,Etobicoke,ON,3,NA,Public Hospital,HOSP
+1076,Toronto,ON,3,NA,Public Hospital,HOSP
+1077,Sudbury,ON,3,NA,Public Hospital,HOSP
+1078,Vaughan,ON,3,NA,Public Hospital,HOSP
+1079,Toronto,ON,3,NA,Public Hospital,HOSP
+1080,Toronto,ON,3,NA,Public Hospital,HOSP
+1081,Toronto,ON,3,NA,Public Hospital,HOSP
+1082,Toronto,ON,3,NA,Public Hospital,HOSP
+1083,Ottawa,ON,3,NA,Public Hospital,HOSP
+1084,Maple Ridge,BC,3,88,Public Hospital,HOSP
+1085,Toronto,ON,3,NA,Public Hospital,HOSP
+1086,Marathon,ON,3,NA,Public Hospital,HOSP
+1087,Vernon,BC,3,NA,Public,HOSP
+1088,Abbotsford,BC,3,119,Public,AL
+1089,East Guillambury,ON,3,NA,Private,AL
+1090,Hamilton,ON,3,NA,"Private, for profit",Adult community appartments
+1091,Edmonton,AB,3,200,"Private, for profit",RR
+1092,Toronto,ON,2,NA,Shelter,SHEL
+1093,Toronto,ON,2,NA,Shelter,SHEL
+1094,Chambly,QC,2,NA,"Private, for profit",RR
+1095,La Tuque,QC,2,NA,"Private, for profit",RR
+1096,Boucherville,QC,2,NA,"Private, for profit",RR
+1097,Valleyfield (?),QC,2,NA,NA,RR
+1098,Quebec City,QC,2,NA,NA,RR
+1099,Laval,QC,2,NA,NA,RR
+1100,Boisbriand,QC,2,NA,NA,RR
+1101,Montreal,QC,2,NA,NA,RR
+1102,Montreal,QC,2,NA,NA,RR
+1103,Saint-Jérôme,QC,2,NA,NA,RR
+1104,Saint-Jérôme,QC,2,NA,NA,RR
+1105,Montreal,QC,2,NA,NA,RR
+1106,Matane,QC,2,NA,NA,RR
+1107,Montreal,QC,2,NA,NA,RR
+1108,Drummondville,QC,2,NA,NA,RR
+1109,Shawinigan,QC,2,NA,NA,RR
+1110,Longueuil,QC,2,NA,NA,RR
+1111,Dollard-des-Ormeaux,QC,2,NA,NA,RR
+1112,Repentigny,QC,2,NA,NA,RR
+1113,Lotbinière,QC,2,NA,NA,RR
+1114,Sainte-Catherine,QC,2,NA,NA,RR
+1115,Montreal,QC,2,NA,"Private, not for profit",RR
+1116,Montreal,QC,2,NA,NA,RR
+1117,Lac-Megantic,QC,2,NA,NA,RR
+1118,Quebec City,QC,2,NA,NA,RR
+1119,Mont-Royal,QC,2,NA,NA,RR
+1120,Montreal,QC,2,NA,NA,RR
+1121,La Baie,QC,2,NA,NA,RR
+1122,Louiseville,QC,2,NA,NA,RR
+1123,Jonquière,QC,2,NA,NA,RR
+1124,Laval,QC,2,NA,NA,RR
+1125,Richmond Hill,ON,2,NA,"Private, for profit",RR
+1126,Kitchener,ON,2,NA,"Private, for profit",RR
+1127,Toronto,ON,2,NA,"Private, for profit",RR
+1128,Maple Ridge,ON,2,NA,"Private, for profit",RR
+1129,Orléans,ON,2,NA,NA,RR
+1130,Hamilton,ON,2,NA,"Private, not for profit",RR
+1131,Toronto,ON,2,NA,NA,RR
+1132,Milton,ON,2,NA,"Private, for profit",RR
+1133,Ottawa,ON,2,NA,NA,RR
+1134,Consort,AB,2,NA,NA,RR
+1135,Edmonton,AB,2,NA,NA,RR
+1136,Calgary,AB,2,NA,NA,RR
+1137,Montreal,QC,2,4,"Private, for profit",RR
+1138,Montreal,QC,2,9,"Private, for profit",RR
+1139,Laval,QC,2,9,"Private, for profit",RR
+1140,Sainte-Justine,QC,2,9,"Private, for profit",RR
+1141,St-Zacharie,QC,2,16,"Private, for profit",RR
+1142,Dolbeau-Mistassini,QC,2,19,"Private, for profit",RR
+1143,Sherbrooke,QC,2,20,"Private, for profit",RR
+1144,L'Ascension-De-Notre-Seigneur,QC,2,22,"Private, for profit",RR
+1145,Saint-Paul-de-l'Île,QC,2,24,"Private, for profit",RR
+1146,Montreal,QC,2,25,"Private, for profit",RR
+1147,Laval,QC,2,27,"Private, for profit",RR
+1148,Épiphanie,QC,2,30,"Private, for profit",RR
+1149,Saint-Ours,QC,2,34,"Private, for profit",RR
+1150,Normandin,QC,2,50,"Private, not for profit",RR
+1151,Montreal,QC,2,50,"Private, for profit",RR
+1152,Saguenay,QC,2,54,"Private, for profit",RR
+1153,Quebec City,QC,2,54,"Private, for profit",RR
+1154,Quebec City,QC,2,62,"Private, for profit",RR
+1155,Beaconsfield,QC,2,80,"Private, for profit",RR
+1156,Mississauga,ON,2,84,"Private, for profit",RR
+1157,Steinbach,MB,2,86,"Private, not for profit",RR
+1158,Aurora,ON,2,94,"Private, for profit",RR
+1159,Montreal,QC,2,96,"Private, for profit",RR
+1160,Quebec City,QC,2,96,"Private, not for profit",RR
+1161,Windsor,ON,2,96,"Private, for profit",RR
+1162,Ancienne-Lorette,QC,2,97,"Private, for profit",RR
+1163,Delta,BC,2,101,Private,RR
+1164,Milton,ON,2,104,"Private, for profit",RR
+1165,Montreal,QC,2,106,"Private, for profit",RR
+1166,Saint-Basile-le-Grand,QC,2,120,"Private, for profit",RR
+1167,Mississauga,ON,2,133,"Private, for profit",RR
+1168,Chateauguay,QC,2,142,"Private, for profit",RR
+1169,Ottawa,ON,2,142,"Private, for profit",RR
+1170,Newmarket,ON,2,148,"Private, for profit",RR
+1171,Thetford Mines,QC,2,168,"Private, for profit",RR
+1172,Ottawa,ON,2,175,"Private, for profit",RR
+1173,Calgary,AB,2,187,"Private, for profit",RR
+1174,Montreal,QC,2,198,"Private, for profit",RR
+1175,Thetford Mines,QC,2,202,"Private, for profit",RR
+1176,Longueuil,QC,2,223,"Private, for profit",RR
+1177,Toronto,ON,2,256,"Private, for profit",RR
+1178,Alma,QC,2,299,"Private, for profit",RR
+1179,St-Jean-de-Richelieu,QC,2,318,"Private, for profit",RR
+1180,Candiac,QC,2,326,"Private, for profit",RR
+1181,Quebec City,QC,2,332,"Private, for profit",RR
+1182,Quebec City,QC,2,360,"Private, for profit",RR
+1183,Laval,QC,2,400,"Private, for profit",RR
+1184,Longueuil,QC,2,427,"Private, for profit",RR
+1185,Boucherville,QC,2,338,"Private, for profit",RR
+1186,Gatineau,QC,2,NA,"Private, for profit",RR
+1187,Saint-Liboire,QC,2,9,"Private, for profit",RR
+1188,Montreal,QC,2,NA,"Private, for profit",RR
+1189,Saint-Sauveur,QC,2,NA,NA,RR
+1190,Montreal,QC,2,NA,NA,RR
+1191,Montreal,QC,2,NA,NA,RR
+1192,Thetford Mines,QC,2,NA,NA,RR
+1193,Longueuil,QC,2,NA,"Private, for profit",RR
+1194,Mississauga,ON,2,NA,"Private, for profit",RR
+1195,Peterborough,ON,2,87,"Private, for profit",RR
+1196,Salmon Arm,BC,2,NA,"Private, for profit",RR
+1197,Burnaby,BC,2,NA,"Private, for profit",RR
+1198,Kelowna,BC,2,NA,"Private, for profit",RR
+1199,Kitsilano,BC,2,NA,NA,RR
+1200,Quebec City,QC,2,NA,NA,RI
+1201,Lévis,QC,2,22,"Private, for profit",RI
+1202,Saint-Jean-de-Matha,QC,2,66,NA,RI
+1203,La Loche,SK,2,NA,NA,LTC
+1204,Quebec City,QC,2,NA,Private,LTC
+1205,Trois-Rivières,QC,2,NA,NA,LTC
+1206,Quebec City,QC,2,NA,NA,LTC
+1207,Saint-Jean-sur-Richelieu,QC,2,NA,Public,LTC
+1208,St-Georges,QC,2,NA,NA,LTC
+1209,Drummondville,QC,2,NA,NA,LTC
+1210,Montreal,QC,2,NA,NA,LTC
+1211,Drummondville,QC,2,NA,NA,LTC
+1212,Sainte-Agathe,QC,2,NA,NA,LTC
+1213,Trois-Rivières,QC,2,NA,NA,LTC
+1214,Quebec City,ON,2,NA,NA,LTC
+1215,Scarborough,ON,2,NA,Public,LTC
+1216,Calgary,ON,2,NA,NA,LTC
+1217,Sydney River,NS,2,NA,NA,LTC
+1218,Steinbach,MB,2,NA,NA,LTC
+1219,Winkler,MB,2,NA,Private,LTC
+1220,The Pas,MB,2,NA,NA,LTC
+1221,Winnipeg,MB,2,NA,"Private, for profit",LTC
+1222,Vernon,BC,2,NA,NA,LTC
+1223,Calgary,AB,2,NA,NA,LTC
+1224,Camrose,AB,2,NA,Public,LTC
+1225,Calgary,AB,2,NA,Public,LTC
+1226,Calgary,AB,2,NA,NA,LTC
+1227,Edmonton,AB,2,NA,NA,LTC
+1228,Medicine Hat,AB,2,NA,NA,LTC
+1229,Calgary,AB,2,NA,NA,LTC
+1230,Edmonton,AB,2,NA,NA,LTC
+1231,Etobicoke,ON,2,21,Public,LTC
+1232,Maple Ridge,BC,2,35,"Private, for profit",LTC
+1233,Atholville,NB,2,39,Private,LTC
+1234,Sarsfield,ON,2,46,"Private, for profit",LTC
+1235,Beloeil,QC,2,70,Public,LTC
+1236,London,ON,2,77,"Private, for profit",LTC
+1237,Kelowna,BC,2,90,"Private, not for profit",LTC
+1238,Pickering,ON,2,117,"Private, for profit",LTC
+1239,Westlock,AB,2,117,Public,LTC
+1240,Vancouver,BC,2,120,"Private, for profit",LTC
+1241,St. Paul,AB,2,120,Private,LTC
+1242,London,ON,2,126,"Private, for profit",LTC
+1243,Toronto,ON,2,129,Public,LTC
+1244,Mississauga,ON,2,160,"Private, for profit",LTC
+1245,Burlington,ON,2,160,"Private, for profit",LTC
+1246,Vanier,ON,2,160,Public,LTC
+1247,Shelburne,ON,2,160,Public,LTC
+1248,Red Deer,AB,2,219,"Private, for profit",LTC
+1249,Scarborough,ON,2,224,"Private, for profit",LTC
+1250,Kamsack,SK,2,NA,NA,LTC
+1251,Drummondville,QC,2,NA,NA,LTC
+1252,Montreal,QC,2,NA,NA,LTC
+1253,Quebec City,QC,2,NA,NA,LTC
+1254,Montmagny,QC,2,NA,NA,LTC
+1255,Richmond Hill,ON,2,168,"Private, not for profit",LTC
+1256,Sudbury,ON,2,433,Public,LTC
+1257,Toronto,ON,2,NA,NA,LTC
+1258,Edmunston,NB,2,NA,NA,LTC
+1259,Winnipeg,MB,2,NA,"Private, not for profit",LTC
+1260,Steinbach,MB,2,NA,"Private, not for profit",LTC
+1261,Winkler,MB,2,NA,NA,LTC
+1262,Crystal City,MB,2,NA,NA,LTC
+1263,Emerson,MB,2,NA,NA,LTC
+1264,Nanaimo,BC,2,NA,"Private, for profit",LTC
+1265,Kamloops,BC,2,NA,NA,LTC
+1266,Surrey,BC,2,NA,NA,LTC
+1267,Surrey,BC,2,NA,NA,LTC
+1268,Camrose,AB,2,NA,Public,LTC
+1269,Edmonton,AB,2,NA,NA,LTC
+1270,Coronation,AB,2,NA,Public,LTC
+1271,Grande Prairie,AB,2,NA,NA,LTC
+1272,Calgary,AB,2,NA,NA,LTC
+1273,Medicine Hat,AB,2,NA,NA,LTC
+1274,Montreal,QC,2,NA,Public Hospital,HOSP
+1275,Toronto,ON,2,NA,Public Hospital,HOSP
+1276,Milton,ON,2,NA,Public Hospital,HOSP
+1277,Toronto,ON,2,NA,Public Hospital,HOSP
+1278,Calgary,AB,2,NA,Public Hospital,HOSP
+1279,Pointe Claire,QC,2,NA,Public Hospital,HOSP
+1280,Brampton,ON,2,NA,Public Hospital,HOSP
+1281,Guelph,ON,2,NA,Public Hospital,HOSP
+1282,Hamilton,ON,2,NA,Public Hospital,HOSP
+1283,Orangeville,ON,2,NA,Public Hospital,HOSP
+1284,Port Perry,ON,2,NA,Public Hospital,HOSP
+1285,Toronto,ON,2,NA,Public Hospital,HOSP
+1286,Hamilton,ON,2,NA,Public Hospital,HOSP
+1287,London,ON,2,NA,Public Hospital,HOSP
+1288,Winnipeg,MB,2,NA,Public Hospital,HOSP
+1289,Leduc,AB,2,NA,Public Hospital,HOSP
+1290,Red Deer,AB,2,NA,Public Hospital,HOSP
+1291,Calgary,AB,2,NA,Public Hospital,HOSP
+1292,Halton,ON,2,NA,SHEL/AL,AL / SHEL
+1293,Calgary,AB,2,NA,AL/SHEL,AL
+1294,Kamloops,BC,2,21,"Private, for profit",AL
+1295,Nelson,BC,2,NA,NA,NA
+1296,Victoria,BC,1,NA,"Private, not for profit",LTC
+1297,Medicine Hat,AB,1,NA,"Private, for profit",NA
+1298,Owen Sound,ON,1,NA,"Private, for profit",NA
+1299,Merritt,BC,1,NA,NA,NA
+1300,Toronto,ON,1,NA,Shelter,SHEL
+1301,Toronto,ON,1,NA,Shelter,SHEL
+1302,Toronto,ON,1,NA,Shelter,SHEL
+1303,Ottawa,ON,1,NA,Shelter,SHEL
+1304,Ottawa,ON,1,NA,Shelter,SHEL
+1305,Ottawa,ON,1,NA,Shelter,SHEL
+1306,Toronto,ON,1,NA,Shelter,SHEL
+1307,Toronto,ON,1,NA,Shelter,SHEL
+1308,Fort McMurray,AB,1,NA,Shelter,SHEL
+1309,Gatineau,QC,1,NA,"Private, for profit",RR
+1310,Lévis,QC,1,NA,NA,RR
+1311,Sainte-Monique,QC,1,NA,NA,RR
+1312,Capitale-Nationale,QC,1,NA,NA,RR
+1313,Rouyn-Noranda,QC,1,NA,NA,RR
+1314,Laval,QC,1,NA,NA,RR
+1315,Montreal,QC,1,NA,NA,RR
+1316,Saint-Hyacinthe,QC,1,NA,NA,RR
+1317,Cote St-Luc,QC,1,NA,NA,RR
+1318,Montreal,QC,1,NA,NA,RR
+1319,Montreal,QC,1,NA,NA,RR
+1320,Mont-Saint-Hilaire,QC,1,NA,NA,RR
+1321,Gatineau,QC,1,NA,NA,RR
+1322,Lebel-sur-Quévillon,QC,1,NA,NA,RR
+1323,Montreal,QC,1,NA,NA,RR
+1324,Marieville,QC,1,NA,NA,RR
+1325,Hinchinbrooke,QC,1,NA,NA,RR
+1326,Saint-Charles-Borromée,QC,1,NA,NA,RR
+1327,Laval,QC,1,NA,NA,RR
+1328,Laval,QC,1,NA,NA,RR
+1329,Bécancour,QC,1,NA,NA,RR
+1330,Maria,QC,1,NA,NA,RR
+1331,Laval,QC,1,NA,NA,RR
+1332,Bonaventure,QC,1,NA,NA,RR
+1333,Windsor,QC,1,185,"Private, for profit",RR
+1334,Montreal,QC,1,NA,NA,RR
+1335,Saint-Lambert,QC,1,88,"Private, for profit",RR
+1336,Longueuil,QC,1,203,"Private, for profit",RR
+1337,Nicolet,QC,1,206,"Private, for profit",RR
+1338,Montreal,QC,1,NA,NA,RI
+1339,Montreal,QC,1,312,"Private, for profit",RR
+1340,Drummondville,QC,1,304,"Private, for profit",RR
+1341,Trois-Rivières,QC,1,308,"Private, for profit",RR
+1342,Saint-Jérôme,QC,1,13,"Private, for profit",RR
+1343,Saint-Sauveur,QC,1,117,"Private, for profit",RR
+1344,Trois-Rivières,QC,1,272,"Private, for profit",RR
+1345,Louiseville,QC,1,NA,NA,RI
+1346,Sainte-Julie,QC,1,498,"Private, for profit",RR
+1347,Joliette,QC,1,51,"Private, for profit",RR
+1348,Drummondville,QC,1,64,"Private, for profit",RR
+1349,Montreal,QC,1,NA,NA,RR
+1350,Pincourt,QC,1,53,"Private, for profit",RR
+1351,Westmount,QC,1,125,"Private, for profit",RR
+1352,Montreal,QC,1,9,"Private, for profit",RR
+1353,Richelieu,QC,1,82,"Private, for profit",RR
+1354,Blainville,QC,1,332,"Private, for profit",RR
+1355,Saint-André-Avellin,QC,1,NA,NA,RR
+1356,Senneterre,QC,1,16,"Private, not for profit",RR
+1357,Quebec City,QC,1,15,"Private, for profit",RR
+1358,Montreal,QC,1,146,"Private, for profit",RR
+1359,Montreal,QC,1,21,"Private, for profit",RR
+1360,St-Nazaire-de -Dorcheste,QC,1,9,"Private, for profit",RR
+1361,Sainte-Georges,QC,1,20,"Private, for profit",RR
+1362,Montreal,QC,1,228,"Private, for profit",RR
+1363,Salaberry-de-Valleyfield,QC,1,167,"Private, for profit",RR
+1364,Longueuil,QC,1,118,"Private, for profit",RR
+1365,L'Ascension-De-Notre-Seigneur,QC,1,24,"Private, for profit",RR
+1366,Saint-Jérôme,QC,1,22,"Private, for profit",RR
+1367,Montreal,QC,1,7,"Private, for profit",RR
+1368,Montreal,QC,1,133,Public,RR
+1369,Montreal,QC,1,163,Public,RR
+1370,Salaberry-de-Valleyfield,QC,1,160,"Public, for profit",RR
+1371,Saint-Hyacinthe,QC,1,9,"Public, for profit",RR
+1372,Montreal,QC,1,215,"Public, for profit",RR
+1373,Saint-Michel-des-Saints,QC,1,58,"Public, for profit",RR
+1374,Saint-Georges,QC,1,215,"Public, for profit",RR
+1375,Laval,QC,1,NA,NA,RI
+1376,Montreal,QC,1,361,"Public, for profit",RR
+1377,Trois-Rivières,QC,1,90,"Public, for profit",RR
+1378,St. Jérôme,Qc,1,302,"Public, for profit",RR
+1379,Terrebonne,QC,1,52,"Public, for profit",RR
+1380,Lanoraie,QC,1,NA,NA,RR
+1381,Rawdon,QC,1,NA,NA,RR
+1382,Lanoraie,QC,1,NA,NA,RR
+1383,Mississauga,ON,1,NA,"Private, for profit",RR
+1384,Burlington,ON,1,NA,"Private, for profit",RR
+1385,Waterloo,ON,1,NA,"Private, for profit",RR
+1386,Waterloo,ON,1,NA,"Private, for profit",RR
+1387,Oakville,ON,1,NA,"Private, for profit",RR
+1388,Ottawa,ON,1,NA,"Private, for profit",RR
+1389,Ajax,ON,1,NA,"Private, for profit",RR
+1390,Vaughan,ON,1,NA,"Private, for profit",RR
+1391,Kitchener,ON,1,NA,"Private, for profit",RR
+1392,Toronto,ON,1,NA,"Private, for profit",RR
+1393,Toronto,ON,1,NA,"Private, for profit",RR
+1394,Toronto,ON,1,NA,"Private, for profit",RR
+1395,Hamilton,ON,1,NA,NA,RR
+1396,Scarborough,ON,1,NA,"Private, for profit",RR
+1397,Aylmer,ON,1,NA,"Private, for profit",RR
+1398,Norwich,ON,1,NA,"Private, not for profit",RR
+1399,Ottawa,ON,1,NA,"Private, for profit",RR
+1400,Ottawa,ON,1,NA,"Private, for profit",RR
+1401,Ottawa,ON,1,NA,NA,RR
+1402,Guelph,ON,1,NA,NA,RR
+1403,Penetanguishene,ON,1,NA,"Private, for profit",RR
+1404,Lévis,ON,1,NA,NA,RR
+1405,Hamilton,ON,1,NA,NA,RR
+1406,Niagara Falls,ON,1,NA,"Private, for profit",RR
+1407,Newmarket,ON,1,NA,"Private, not for profit",RR
+1408,Pickering,ON,1,NA,"Private, for profit",RR
+1409,Petrolia,ON,1,NA,Co-op,RR
+1410,Ottawa,ON,1,NA,"Private, for profit",RR
+1411,Toronto,ON,1,NA,"Private, for profit",RR
+1412,Toronto,ON,1,NA,"Private, for profit",RR
+1413,Toronto,ON,1,NA,"Private, for profit",RR
+1414,Oshawa,ON,1,NA,"Private, for profit",RR
+1415,Waterloo,ON,1,NA,"Private, for profit",RR
+1416,St. Jacobs,ON,1,NA,"Private, for profit",RR
+1417,Winnipeg,MB,1,NA,NA,RR
+1418,Burnaby,BC,1,NA,NA,RR
+1419,Montreal,QC,1,5,"Private, for profit",RR
+1420,Montreal,QC,1,6,"Private, for profit",RR
+1421,Montreal,QC,1,8,"Private, for profit",RR
+1422,Beaconsfield,QC,1,9,"Private, for profit",RR
+1423,Gatineau,QC,1,9,"Private, for profit",RR
+1424,Laval,QC,1,9,"Private, for profit",RR
+1425,Terrebonne,QC,1,9,"Private, for profit",RR
+1426,Laval,QC,1,9,"Private, for profit",RR
+1427,Sainte-Marie-Salomé,QC,1,9,"Private, for profit",RR
+1428,Scarborough,ON,1,10,"Private, for profit",RR
+1429,Joliette,QC,1,13,"Private, for profit",RR
+1430,Montreal,QC,1,15,Private,RR
+1431,Montreal,QC,1,19,"Private, for profit",RR
+1432,Leamington,ON,1,19,"Private, for profit",RR
+1433,Normandin,QC,1,20,"Private, for profit",RR
+1434,Alexandria,ON,1,22,"Private, for profit",RR
+1435,Ayer's Cliff,QC,1,25,"Private, for profit",RR
+1436,Saguenay,QC,1,26,"Private, not for profit",RR
+1437,Shawinigan,QC,1,26,"Private, for profit",RR
+1438,Beauceville,QC,1,27,"Private, for profit",RR
+1439,Laval,QC,1,27,"Private, for profit",RR
+1440,Arthur,ON,1,28,"Private, for profit",RR
+1441,Lévis,QC,1,33,"Private, for profit",RR
+1442,Saguenay,QC,1,39,Private,RR
+1443,Norwich,ON,1,40,"Private, for profit",RR
+1444,St-Lazare-de-Belchasse,QC,1,42,"Private, for profit",RR
+1445,Penetanguishene,ON,1,42,"Private, for profit",RR
+1446,Montreal,QC,1,48,"Private, for profit",RR
+1447,Montmagny,QC,1,50,"Private, for profit",RR
+1448,Lac-Megantic,QC,1,52,"Private, for profit",RR
+1449,Ferme-Neuve,QC,1,56,"Private, for profit",RR
+1450,Saint-Pierre-Les-Becquets,QC,1,57,"Private, for profit",RR
+1451,Granby,QC,1,59,"Private, for profit",RR
+1452,St. Catharines,ON,1,60,"Private, for profit",RR
+1453,Magog,QC,1,63,"Private, non profit",RR
+1454,Smiths Falls,ON,1,64,"Private, for profit",RR
+1455,London,ON,1,64,"Private, for profit",RR
+1456,Chateauguay,QC,1,65,"Private, for profit",RR
+1457,Toronto,ON,1,66,"Private, for profit",RR
+1458,Drummondville,QC,1,68,"Private, for profit",RR
+1459,Thorold,ON,1,68,"Private, for profit",RR
+1460,Fort St. John,BC,1,71,"Private, for profit",RR
+1461,Laval,QC,1,73,"Private, not for profit",RR
+1462,Toronto,ON,1,73,"Private, for profit",RR
+1463,Sainte-Adèle,QC,1,75,"Private, for profit",RR
+1464,Toronto,ON,1,77,"Private, for profit",RR
+1465,Beauceville,QC,1,81,"Private, for profit",RR
+1466,Pembroke,ON,1,81,"Private, for profit",RR
+1467,Windsor,ON,1,83,"Private, for profit",RR
+1468,Surrey,BC,1,90,"Private, for profit",RR
+1469,Midland,ON,1,92,"Private, for profit",RR
+1470,Rivière-du-Loup,QC,1,93,"Private, for profit",RR
+1471,Notre-Dame-du-Bon-Conseil,QC,1,94,"Private, for profit",RR
+1472,Alliston,ON,1,98,"Private, for profit",RR
+1473,Chilliwack,ON,1,98,"Private, for profit",RR
+1474,Cornwall,ON,1,207,"Private, for profit",RR
+1475,Laval,QC,1,100,"Private, for profit",RR
+1476,Montreal,QC,1,103,Public,RR
+1477,Peterborough,ON,1,105,"Private, for profit",RR
+1478,Fonthill,ON,1,106,"Private, for profit",RR
+1479,Drummondville,QC,1,108,"Private, for profit",RR
+1480,Montreal,QC,1,109,"Private, for profit",RR
+1481,Montreal,QC,1,109,"Private, for profit",RR
+1482,Montreal,QC,1,112,"Private, for profit",RR
+1483,St. Catharines,ON,1,118,"Private, for profit",RR
+1484,Hamilton,ON,1,120,"Private, for profit",RR
+1485,Thornhill,ON,1,121,"Private, for profit",RR
+1486,Alma,QC,1,126,"Private, for profit",RR
+1487,Etobicoke,ON,1,139,"Private, for profit",RR
+1488,Delta,BC,1,142,"Private, for profit",RR
+1489,Lakefield,ON,1,146,"Private, for profit",RR
+1490,Montreal,QC,1,148,"Private, for profit",RR
+1491,Brampton,ON,1,148,"Private, for profit",RR
+1492,Gatineau,QC,1,151,"Private, for profit",RR
+1493,Calgary,AB,1,152,"Private, for profit",RR
+1494,Rawdon,QC,1,163,"Private, for profit",RR
+1495,Sainte-Catherine,QC,1,165,"Private, for profit",RR
+1496,St. Catharines,ON,1,167,"Private, for profit",RR
+1497,Woodbridge,ON,1,168,"Private, for profit",RR
+1498,Richelieu,QC,1,178,"Private, for profit",RR
+1499,Montreal,QC,1,186,For profit,RR
+1500,Montmagny,QC,1,195,"Private, for profit",RR
+1501,Toronto,ON,1,200,"Private, for profit",RR
+1502,St-Bruno-de-Montarville,QC,1,235,"Private, for profit",RR
+1503,Orleans,ON,1,236,"Private, for profit",RR
+1504,Trois-Rivières,QC,1,238,"Private, for profit",RR
+1505,Scarborough,ON,1,249,"Private, for profit",RR
+1506,Montreal,QC,1,260,"Private, for profit",RR
+1507,Lévis,QC,1,329,"Private, for profit",RR
+1508,Montreal,QC,1,334,"Private, for profit",RR
+1509,McMasterville,QC,1,336,"Private, for profit",RR
+1510,Montreal,QC,1,341,"Private, for profit",RR
+1511,Ancienne-Lorette,QC,1,352,"Private, for profit",RR
+1512,Quebec City,QC,1,359,"Private, for profit",RR
+1513,Vaughan,ON,1,420,"Private, for profit",RR
+1514,Montreal,QC,1,467,"Private, for profit",RR
+1515,Cambridge,ON,1,NA,"Private, not for profit",RR
+1516,St-Prosper,QC,1,12,"Private, for profit",RR
+1517,Beauport,QC,1,NA,"Private, for profit",RR
+1518,Quebec City,QC,1,NA,NA,RR
+1519,Chertsey,QC,1,23,NA,RR
+1520,Mississauga,ON,1,NA,NA,RR
+1521,Ottawa,OB,1,NA,NA,RR
+1522,Edmonton,AB,1,NA,NA,RR
+1523,Dundas,ON,1,NA,NA,RR
+1524,Saint-Eustache,QC,1,NA,"Private, for profit",RI
+1525,Quebec City,QC,1,NA,NA,RI
+1526,Montreal,QC,1,NA,NA,RI
+1527,Quebec City,QC,1,NA,NA,RI
+1528,Brampton,ON,1,NA,"Private, for profit",RH
+1529,Waterloo,ON,1,156,"Private, for profit",LTC
+1530,Gatineau,QC,1,NA,NA,LTC
+1531,Pessisville,QC,1,NA,NA,LTC
+1532,St-Siméon,QC,1,NA,NA,LTC
+1533,Granby,QC,1,NA,NA,LTC
+1534,Lévis,QC,1,NA,NA,LTC
+1535,Montreal,QC,1,NA,NA,LTC
+1536,Stratford,QC,1,NA,NA,LTC
+1537,Montreal,QC,1,NA,NA,LTC
+1538,Lanaudière,QC,1,NA,NA,LTC
+1539,Valleyfield,QC,1,NA,NA,LTC
+1540,Rawdon,QC,1,NA,NA,LTC
+1541,Trois-Rivières,QC,1,NA,NA,LTC
+1542,Thetford Mines,QC,1,NA,NA,LTC
+1543,Sherbrooke,QC,1,NA,NA,LTC
+1544,Sherbrooke,QC,1,NA,Public,LTC
+1545,Saint-Jerôme,QC,1,NA,NA,LTC
+1546,Salaberry-de-Valleyfield,QC,1,NA,NA,LTC
+1547,Gatineau,QC,1,NA,NA,LTC
+1548,Bedford,QC,1,NA,NA,LTC
+1549,Laval,QC,1,NA,NA,LTC
+1550,Quebec City,QC,1,NA,NA,LTC
+1551,Montreal,QC,1,NA,NA,LTC
+1552,Mississauga,ON,1,NA,"Private, for profit",LTC
+1553,Sudbury,ON,1,NA,NA,LTC
+1554,Waterloo,ON,1,NA,"Private, for profit",LTC
+1555,London,ON,1,NA,Convent,LTC
+1556,Thornhill,ON,1,NA,NA,LTC
+1557,Dartmouth,NS,1,NA,"Public, for profit",LTC
+1558,Moncton,NB,1,NA,NA,LTC
+1559,Brandon,MB,1,NA,NA,LTC
+1560,Steinbach,MB,1,NA,NA,LTC
+1561,Grunthal,MB,1,NA,NA,LTC
+1562,La Broquerie,MB,1,NA,NA,LTC
+1563,Winnipeg,MB,1,NA,NA,LTC
+1564,Winnipeg,MB,1,NA,NA,LTC
+1565,Swan Valley,MB,1,NA,NA,LTC
+1566,The Pas,MB,1,NA,NA,LTC
+1567,Abbotsford,BC,1,26,"Private, not for profit",LTC
+1568,Vancouver,BC,1,NA,"Private, for profit",LTC
+1569,Vancouver,BC,1,NA,NA,LTC
+1570,Calgary,AB,1,NA,"Private, for profit",LTC
+1571,Calgary,AB,1,NA,NA,LTC
+1572,Edmonton,AB,1,NA,NA,LTC
+1573,Edmonton,AB,1,NA,Public,LTC
+1574,Edmonton,AB,1,NA,NA,LTC
+1575,Grande Prairie,AB,1,NA,NA,LTC
+1576,Hines Creek,AB,1,NA,NA,LTC
+1577,Calgary,AB,1,NA,NA,LTC
+1578,Calgary,AB,1,NA,NA,LTC
+1579,Brooks,AB,1,NA,NA,LTC
+1580,Calgary,AB,1,NA,NA,LTC
+1581,Strathcona,AB,1,NA,NA,LTC
+1582,Edmonton,AB,1,NA,Public,LTC
+1583,Toronto,ON,1,21,Public,LTC
+1584,Stand Off,AB,1,25,Public,LTC
+1585,Edmonton,AB,1,31,"Private, not for profit",LTC
+1586,Virgil,ON,1,41,"Private, not for profit",LTC
+1587,Fonthill,ON,1,57,NA,LTC
+1588,Sarnia,ON,1,60,"Private, for profit",LTC
+1589,Warkworth,ON,1,60,"Private, for profit",LTC
+1590,Sault Ste-Marie,ON,1,63,"private, not for profit",LTC
+1591,Port Coquitlam,BC,1,66,Private,LTC
+1592,Newmarket,ON,1,70,"Private, for profit",LTC
+1593,Toronto,ON,1,77,"Private, for profit",LTC
+1594,Simcoe,ON,1,80,"Private, not for profit",LTC
+1595,Hamilton,ON,1,80,"Private, for profit",LTC
+1596,Chilliwack,BC,1,89,"Private, for profit",LTC
+1597,Vancouver,BC,1,99,"Private, not for profit",LTC
+1598,Paris,ON,1,NA,Public hospital,HOSP
+1599,Penticton,BC,1,100,"Private, not for profit",LTC
+1600,Burlington,ON,1,101,"Private, for profit",LTC
+1601,St. Catharines,ON,1,101,"Private, for profit",LTC
+1602,Surrey,BC,1,103,"Private, for profit",LTC
+1603,Ajax,ON,1,110,"Private, for profit",LTC
+1604,Ottawa,ON,1,111,"Private, for profit",LTC
+1605,Cambridge,ON,1,114,"Private, not-for-profit",LTC
+1606,Calgary,AB,1,114,"Private, not for profit",LTC
+1607,Beauport,QC,1,116,Private,LTC
+1608,St. Thomas,ON,1,116,"Private, for profit",LTC
+1609,Winnipeg,MB,1,116,"Private, not for profit",LTC
+1610,Leamington,ON,1,120,Public,LTC
+1611,Niagara Falls,ON,1,121,Public,LTC
+1612,Stouffville,ON,1,128,Not-for-Profit,LTC
+1613,Sudbury,ON,1,128,"Private, for profit",LTC
+1614,London,ON,1,128,"Private, for profit",LTC
+1615,Sarnia,ON,1,128,"Private, for profit",LTC
+1616,Sudbury,ON,1,128,"Private, not for profit",LTC
+1617,Cornwall,ON,1,132,Public,LTC
+1618,Etobicoke,ON,1,90,"Private, not for profit",LTC
+1619,Edmonton,AB,1,156,"Private, not for profit",LTC
+1620,London,ON,1,160,"Private, not for profit",LTC
+1621,Etobicoke,ON,1,160,"Private, for profit",LTC
+1622,Scarborough,ON,1,160,"Private, not for profit",LTC
+1623,Missisauga,ON,1,160,Public,LTC
+1624,Pembroke,ON,1,166,Public,LTC
+1625,Saint-Jérôme,QC,1,168,"Private, subsidized",LTC
+1626,London,ON,1,170,"Private, for profit",LTC
+1627,Burlington,ON,1,175,"Private, for profit",LTC
+1628,Toronto,ON,1,187,Public,LTC
+1629,Calgary,AB,1,190,Public,LTC
+1630,Hamilton,ON,1,192,"Private, not for profit",LTC
+1631,Etobicoke,ON,1,192,Public,LTC
+1632,Vancouver,BC,1,192,Public,LTC
+1633,Mississauga,ON,1,200,"Private, not for profit",LTC
+1634,Peterborough,ON,1,200,"Private, not for profit",LTC
+1635,Mission,BC,1,200,NA,LTC
+1636,Leamington,ON,1,206,Public,LTC
+1637,Vancouver,BC,1,210,"Private, for profit",LTC
+1638,Langley,BC,1,210,Public,LTC
+1639,Newmarket,ON,1,224,"Private, not for profit",LTC
+1640,Beamsville,ON,1,231,"Private, not for profit",LTC
+1641,Scarborough,ON,1,302,Public,LTC
+1642,Toronto,ON,1,456,Public,LTC
+1643,Quebec City,QC,1,NA,NA,LTC
+1644,Victoriaville,QC,1,NA,Public,LTC
+1645,St-Bruno-de-Montarville,QC,1,NA,Public,LTC
+1646,Saint-Jérôme,QC,1,NA,NA,LTC
+1647,Quebec City,QC,1,NA,NA,LTC
+1648,Gatineau,QC,1,NA,NA,LTC
+1649,Algoma,ON,1,NA,NA,LTC
+1650,Thornhill,ON,1,NA,NA,LTC
+1651,Tilbury,ON,1,43,NA,LTC
+1652,Saint John,NB,1,NA,NA,LTC
+1653,Opaskwayak Cree Nation,MB,1,NA,NA,LTC
+1654,The Pas,MB,1,NA,NA,LTC
+1655,Richmond,BC,1,NA,NA,LTC
+1656,Surrey,BC,1,NA,NA,LTC
+1657,Surrey,BC,1,NA,NA,LTC
+1658,Surrey,BC,1,NA,NA,LTC
+1659,Lethbridge,AB,1,NA,NA,LTC
+1660,Cardston,AB,1,NA,Public,LTC
+1661,Drumheller,AB,1,NA,Public,LTC
+1662,Edmonton,AB,1,NA,NA,LTC
+1663,Edmonton,AB,1,NA,NA,LTC
+1664,St. Paul,AB,1,NA,Public,LTC
+1665,Edmonton,AB,1,NA,NA,LTC
+1666,Edmonton,AB,1,NA,NA,LTC
+1667,Calgary,AB,1,NA,Public,LTC
+1668,Edmonton,AB,1,NA,NA,LTC
+1669,Edmonton,AB,1,NA,NA,LTC
+1670,Lethbridge,AB,1,NA,NA,LTC
+1671,Red Deer,AB,1,NA,NA,LTC
+1672,Calgary,AB,1,NA,NA,LTC
+1673,Calgary,AB,1,NA,NA,LTC
+1674,Edmonton,AB,1,NA,NA,LTC
+1675,Windsor,ON,1,NA,NA,LTC
+1676,Prince Albert,SK,1,NA,Public correctional facility,JAIL
+1677,Montreal,QC,1,NA,Public Correctional Facility,JAIL
+1678,Laval,QC,1,NA,Public correctional facility,JAIL
+1679,Stony Mountain,MB,1,NA,Public correctional facility,JAIL
+1680,"Mission, BC",BC,1,NA,Public correctional facility,JAIL
+1681,Edmonton,AB,1,NA,Public correctional facility,JAIL
+1682,Duck Lake,SK,1,NA,Public Correctional Facility,JAIL
+1683,Innisfail,QC,1,NA,Public Correctional Facility,JAIL
+1684,Toronto,ON,1,NA,Public correctional facility,JAIL
+1685,Montreal,QC,1,NA,Public Hospital,HOSP
+1686,Chatham,ON,1,NA,Public Hospital,HOSP
+1687,Ajax,ON,1,NA,Public Hospital,HOSP
+1688,Toronto,ON,1,NA,Public Hospital,HOSP
+1689,Toronto,ON,1,NA,Public Hospital,HOSP
+1690,Toronto,ON,1,NA,Public Hospital,HOSP
+1691,Toronto,ON,1,NA,Public Hospital,HOSP
+1692,Thompson,MB,1,NA,Public Hospital,HOSP
+1693,Surrey,BC,1,NA,Public Hospital,HOSP
+1694,Grande Prairie,AB,1,69,Public Hospital,HOSP
+1695,Victoria,BC,1,NA,Public Hospital,HOSP
+1696,Yorkton,SK,1,NA,Public Hospital,HOSP
+1697,Longueuil,QC,1,NA,Public,HOSP
+1698,Gaspé,QC,1,NA,Public Hospital,HOSP
+1699,Belleville,ON,1,NA,Public hospital,HOSP
+1700,Kirkland Lake,ON,1,NA,Public Hospital,HOSP
+1701,Brantford,ON,1,NA,Public,HOSP
+1702,Toronto,ON,1,NA,Public Hospital,HOSP
+1703,Hamilton,ON,1,NA,Public Hospital,HOSP
+1704,Guelph,ON,1,NA,Public Hospital,HOSP
+1705,Chatham,ON,1,NA,Public Hospital,HOSP
+1706,Tillsonburg,ON,1,NA,Public Hospital,HOSP
+1707,Steinbach,MB,1,NA,Public Hospital,HOSP
+1708,Beausejour,MB,1,NA,Public Hospital,HOSP
+1709,Dawson Creek,BC,1,NA,Public Hospital,HOSP
+1710,Medicine Hat,AB,1,NA,Public Hospital,HOSP
+1711,Strathmore,AB,1,NA,Public Hospital,HOSP
+1712,Richmond Hill,BC,1,NA,Public Hospital,HOSP
+1713,Region of Waterloo,ON,1,NA,SHEL/AL,AL / SHEL ?
+1714,Halton,ON,1,NA,SHEL/AL,AL / SHEL
+1715,Halton,ON,1,NA,SHEL/AL,AL / SHEL
+1716,North York,ON,1,NA,NA,AL
+1717,Ottawa,ON,1,NA,AL,AL
+1718,Thornhill,ON,1,NA,AL,AL
+1719,Toronto,ON,1,NA,Public,AL
+1720,Peterborough,ON,1,NA,NA,AL
+1721,Edmonton,AB,1,NA,Public,AL
+1722,Grande Prairie,AB,1,NA,"Private, not for profit",AL
+1723,Hamilton,ON,1,NA,NA,AL
+1724,Hamilton,ON,1,NA,NA,AL
+1725,Ottawa,ON,1,NA,NA,AL
+1726,Keswick,ON,1,NA,Public,AL
+1727,Red Deer,AB,1,NA,NA,AL
