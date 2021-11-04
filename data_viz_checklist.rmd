@@ -1,0 +1,338 @@
+---
+title: "24 Steps to Improve Your ggplot Visuals"
+author: Najmus Saqib
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  html_document:
+    theme: yeti
+    df_print: paged
+    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+R is an excellent platform for developing high quality data visualization. While programs like Excel, Power BI, Tableau, SAS, etc. provide an easy way for users to create a set of standard charts and graphs, the strength of R for data visualization lies in the granular control it provides the user. In this presentation, we will look at how that strength can be leveraged to create impactful, high quality data visualization using `ggplot`, which is part of `tidyverse`  
+
+
+# Import COVID-19 data to visualize
+
+To start, let's import international data on COVID-19 from PHAC's website and focus on G7 countries at the end of 2020  
+
+
+```{r, message = FALSE}
+raw_df <- read_csv("https://health-infobase.canada.ca/src/data/covidLive/international/InternationalCovid19Cases.csv")
+
+
+df <- raw_df %>% 
+        filter(iso_code %in% c("CAN","USA","DEU","FRA", "GBR", "ITA", "JPN")) %>%
+        filter(date == "2020-12-31") %>%
+        select(iso_code, date, new_cases_14_days_100k)
+
+df
+        
+
+```
+# Generate basic visualization
+
+In `ggplot` it is easy to generate a visualization with minimal one line of code. Let's look at how the G7 nations were doing at the end of 2020 with respect to new cases of COVID-19 in the past 14 days per 100,000 population  
+
+
+```{r}
+g <- ggplot(df, aes(x = iso_code, y = new_cases_14_days_100k)) + geom_col()
+
+g
+```
+
+# Incoporate good data visualization practices
+
+While the above minimal code is sufficient to produce a visualization that can be good enough for some exploratory data analysis, it is by no means polished, nor can it considered publication worthy.  
+
+Fortunately for us, `ggplot` is a very robust data visualization engine that provides the developer with all the granular control needed to be able to produce high quality visualizations. While there are various factors to take into consideration, a good starting point under any context is to incorporate best visualization practices. One good resource is by well-respected expert Stephanie Evergreen, who has made public a 24-point checklist on [her website](https://stephanieevergreen.com/rate-your-visualization/). Lets make our way through the checklist and explore how these best pracitices can be incorporated in `ggplot`  
+
+
+## 1- Short and left-justified title
+
+Short titles enable readers to comprehend takeaway messages even when quickly skimming the graph. Rather than a generic phrase, use a descriptive sentence that encapsulates the graphs finding  
+
+```{r}
+g1 <- g + labs(title = "Canada doing well compared to G7 peers")
+
+g1
+```
+
+
+## 2 - Provide additional context with subtitles
+
+Subtitles and annotations (call-out text within the graph) can add explanatory and interpretive power to a graph. Use them to answer questions a viewer might have or to highlight specific data points  
+
+```{r}
+g2 <- g1 + labs(subtitle = "New COVID-19 cases in the last 14 days per 100k population at the end of 2020")
+
+g2
+```
+
+
+## 3 - Hierarchal text size
+
+Titles are in a larger size than subtitles, which are larger than labels, which are larger than axis labels which are larger than source information. In `ggplot` this behaviour is built in, although it is possible to tinker around with the specific font sizes if needed.    
+
+```{r}
+g3 <- g2 
+
+g3
+```
+
+## 4 - Horizontal text
+
+Titles, subtitles, annotations, and data labels are horizontal (not vertical or diagonal). Line labels and axis labels can deviate from this rule and still receive full points. Consider switching graph orientation (e.g., from column to bar chart) to make text horizontal.
+
+```{r}
+g4 <- g3 + coord_flip()
+
+g4
+```
+
+## 5 - Apply labels directly
+
+Position data labels near the data rather than in a separate legend (e.g., on top of or next to bars and next to lines). Eliminate/embed legends when possible because eye movement back and forth between the legend and the data can interrupt the brain's attempts to interpret the graph.
+
+```{r}
+g5 <- g4 + geom_text(aes(label = round(new_cases_14_days_100k, 0)), hjust = 1.1, colour = "white")
+
+g5
+```
+
+## 6 - Efficient labelling
+
+Focus attention by removing the redundancy. Do not add numeric labels and use a y-axis scale, since this is redundant
+
+```{r}
+g6 <- g5 + labs(x = NULL, y = NULL)
+
+g6
+```
+
+## 7 - Avoid misleading proportions
+
+A viewer should be able measure the length or area of the graph with a ruler and find that it matches the relationship in the underlying data. Y-axis scales should be appropriate. Bar charts start axes at 0
+
+```{r}
+g7 <- g6
+
+g7
+```
+
+## 8 - Intentional ordering
+
+Data should be displayed in an order that makes logical sense to the viewer. Use an order that supports interpretation of the data.
+
+```{r}
+g8 <- ggplot(df, aes(x = reorder(iso_code, new_cases_14_days_100k, sum), y = new_cases_14_days_100k)) + 
+        geom_col() + 
+        labs(title = "Canada doing well compared to G7 peers", 
+             subtitle = "New COVID-19 cases in the last 14 days per 100k population at the end of 2020",
+             x = NULL,
+             y = NULL) +
+        coord_flip() +
+        geom_text(aes(label = round(new_cases_14_days_100k, 0)), hjust = 1.1, colour = "white")
+
+g8
+```
+
+## 9 - Equidistant axis intervals
+
+The spaces between axis intervals should be the same unit, even if every axis interval isn't labeled. Irregular data collection periods can be noted with markers on a line graph, for example. With `ggplot` this behaviour is built in by default
+
+```{r}
+g9 <- g8
+
+g9
+```
+
+## 10 - 2D Graphs only
+
+Avoid three-dimensional displays, bevels, and other distortions. This behaviour is built-in by default in `ggplot`
+
+```{r}
+g10 <- g9
+
+g10
+```
+
+## 11 - No decorations
+
+Graph is free from clipart or other illustrations used solely for decoration. Some graphics, like icons, can support interpretation. This behaviour is built-in by default in `ggplot`
+
+```{r}
+g11 <- g10
+
+g11
+```
+
+## 12 - Intentional colour scheme
+
+Colors should represent brand or other intentional choice, not default color schemes. Use your organization's colors or your client's colors.
+
+```{r}
+g12 <- ggplot(df, aes(x = reorder(iso_code, new_cases_14_days_100k, sum), y = new_cases_14_days_100k)) + 
+        geom_col(fill = ifelse(df$iso_code == "CAN", "red", "gray")) + # change colour for Canada only
+        labs(title = "Canada doing well compared to G7 peers", 
+             subtitle = "New COVID-19 cases in the last 14 days per 100k population at the end of 2020",
+             x = NULL,
+             y = NULL) +
+        coord_flip() +
+        geom_text(aes(label = round(new_cases_14_days_100k, 0)), hjust = 1.1, colour = ifelse(df$iso_code == "CAN","white","black")) # label colour
+
+g12
+```
+
+## 13 - Use colour to highlight patterns
+
+Action colors should guide the viewer to key parts of the display. Less important, supporting, or comparison data should be a muted color, like gray. In this example, this has already been accomplished in the previous step.
+
+```{r}
+g13 <- g12
+
+g13
+```
+
+## 14 - Black and White friendly
+
+When printed or photocopied in black and white, the viewer should still be able to see patterns in the data. In this case this works and Canada is highlighted by dark red while the rest of the countries are highlighted by light grey.
+
+```{r}
+
+g14 <- g13
+
+g14
+```
+
+## 15 - Colour blind friendly
+
+Avoid red-green and yellow-blue combinations, especially when those colors touch one another. Avoid using red to mean bad and green to mean good in the same chart. In this example, the existing visual avoids all these pitfalls. There are various resources online to simulate colour-blindness and to test out the visuals. 
+
+```{r}
+g15 <- g14
+
+g15
+```
+
+## 16 - Utilize contrasts for legibility
+
+Black/very dark text against a white/transparent background is easiest to read. In this example we have already achieved this in previous steps.
+
+```{r}
+g16 <- g15
+
+g16
+```
+
+## 17 - Remove superfluous gridlines
+
+Color should be faint gray, not black. Full points if no gridlines are used and data labels are used instead. Gridlines, even muted, should not be used when the graph includes numeric labels on each data point. This is default behaviour in `ggplot`
+
+```{r}
+g17 <- g16 + theme_minimal()
+
+g17
+```
+
+
+## 18 - Remove border
+
+Graph should bleed into the surrounding page or slide rather than being contained by a border.
+
+```{r}
+g18 <- g17
+
+g18
+```
+
+## 19 - Remove unnecessary lines and tick marks
+
+The graph does not have unnecessary tick marks or axes lines. This is acheived in a previous step via `theme_minimal()`
+
+```{r}
+g19 <- g18
+
+g19
+```
+
+## 20 - Avoid dual-axis
+
+Viewers can best interpret one x- and one y-axis. Don't add a second y-axis. Try a connected scatter plot or two graphs, side by side, instead. (A secondary axis used to hack new graph types is ok, so long as viewers aren't being asked to interpret a second y-axis.) In `ggplot` creating a dual-axis graph is possible, albeit not promoted due in course to a delibrate design choice by Hadley Wickham.
+
+```{r}
+g20 <- g19
+
+g20
+```
+
+## 21 - Highlight significant conclusion
+
+Graphs should have a "so what?" - either a practical or statistical significance (or both) to warrant their presence. For example, contextualized or comparison data help the viewer understand the significance of the data and give the graph more interpretive power. In this example, this is achieved via some of the previous steps pertaining to labels, titles and colours
+
+```{r}
+g21 <- g20
+
+g21
+```
+
+## 22 - Use appropriate graph type
+Data are displayed using a graph type appropriate for the relationship within the data. For example, change over time is displayed as a line graph, area chart, slope graph, or dot plot. In this example, a bar graph is a good option for a point-in-time snapshot.
+
+```{r}
+g22 <- g21
+
+g22
+```
+
+## 23 - Appropriate numerical precision
+
+Use a level of precision that meets your audiences' needs. Few numeric labels need decimal places, unless you are speaking with academic peers. Charts intended for public consumption rarely need p values listed. In this instance, we have removed numbers to the right of the decimal as such precision is not beneficial at this scale.
+
+```{r}
+g23 <- g22
+
+g23
+```
+
+## 24 - All graph elements should be synergistic
+
+Individual chart elements work together to reinforce the overarching takeaway message. interpretation about graph type, text, arrangement, color, and lines should reinforce the same takeaway message. In this example, all of this has been acheived in previous steps, although this is a largely subjective interpretation. 
+
+```{r}
+g24 <- ggplot(df, aes(x = reorder(iso_code, new_cases_14_days_100k, sum), y = new_cases_14_days_100k)) + 
+        geom_col(fill = ifelse(df$iso_code == "CAN", "red", "gray")) + 
+        labs(title = "Canada doing well compared to G7 peers", 
+             subtitle = "New COVID-19 cases in the last 14 days per 100k population at the end of 2020",
+             x = NULL,
+             y = NULL) +
+        coord_flip() +
+        geom_text(aes(label = round(new_cases_14_days_100k, 0)), hjust = 1.1, colour = ifelse(df$iso_code == "CAN","white","black")) +
+        theme_minimal() # just putting together all these steps in one chunk for convenience
+
+g24
+```
+
+# Conclusion
+
+Overall, incorporating these best practices in `ggplot` is a very good start. While some of the items in the checklist by Stephanie Evergreen are subjective, most items are very easy to interpret and now implement. However, running your visuals against this checklist will not be enough given the context of the work.   
+
+If the work is part of a product that will be published online, additional steps will need to be taken to ensure that the visuals meet the look and feel of a standard Government of Canada product. While this discussion falls outside the scope of this presentation, `ggplot` provides the developer with enough flexibility to enable that.  
+
+For now and relevant to this example, please use the code in this file to go from this ...
+
+```{r, echo=FALSE}
+g
+```
+
+to this ..
+
+```{r, echo=FALSE}
+g24
+```
+
