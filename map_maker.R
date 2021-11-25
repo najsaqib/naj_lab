@@ -65,7 +65,7 @@ city_map <- ggplot() +
 
 file_type <- "jpg"
 
-ggsave(paste0(city, file_type), 
+ggsave(paste0(city, "_map.", file_type), 
        city_map, 
        units = "in",
        width = 8,
