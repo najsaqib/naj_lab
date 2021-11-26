@@ -12,6 +12,7 @@ loadfonts(device = "win", quiet = TRUE)
 background_color<-'#FFFBF6'
 street_color<-'#13130c'
 small_street_color<-'#37261a'
+coastline_color<-'#30200A'
 coast_color<-'#5985ab'
 font_color<-'#13130c'
 chart_font<-"Glamor Med Cond"
@@ -39,6 +40,12 @@ small_streets <- bbox %>%
                                   "service", "footway")) %>%
         osmdata_sf()
 
+coastline <- bbox %>%
+        opq() %>%
+        add_osm_feature(key = "natural", 
+                        value = "coastline") %>%
+        osmdata_sf()
+
 
 # Plot the map
 
@@ -53,11 +60,16 @@ city_map <- ggplot() +
                 color = small_street_color,
                 size = .3,
                 alpha = .6) +
+        geom_sf(data = coastline$osm_lines,
+                inherit.aes = FALSE,
+                color = coastline_color,
+                size = 0.2,
+                alpha = 0.4) +
         coord_sf(expand = FALSE) +
         theme_void() +
         theme(panel.border = element_blank(),
               plot.background = element_blank(),
-              plot.caption = element_text(hjust = 0.5, size = 112, family = chart_font)) +
+              plot.caption = element_text(hjust = 0.5, size = 162, family = chart_font)) +
         labs(caption = city)
 
 
@@ -68,7 +80,7 @@ file_type <- "jpg"
 ggsave(paste0(city, "_map.", file_type), 
        city_map, 
        units = "in",
-       width = 8,
-       height = 10,
+       width = 16,
+       height = 18,
        dpi = 300, 
        device = file_type)
