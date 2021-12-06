@@ -1,0 +1,16 @@
+# Create contact sheet
+montage -verbose -label '%f' -font Geneva -pointsize 10 -background '#000000' -fill 'gray' -define tif:size=200x200 -geometry 200x200+2+2 -auto-orient *.tif contact-dark.jpg
+
+# Apply Unsharp mask with same parameters as GIMP (discussion here: https://redskiesatnight.com/2005/04/06/sharpening-using-image-magick/)
+convert “$1” -unsharp 0x$(dc -e “4k 1 $2 +p”)+$3+$(dc -e “4k $4 255.0 /p”) “$5”
+
+# Add white borders
+convert -bordercolor white -border 80 input.jpg output.jpg
+
+# Resize and convert to JPG and add white borders
+mogrify \
+-path "/Users/najmussaqib/Pictures/new_scans/" \
+-quality 90% \
+-format jpg \
+-bordercolor white -border 100 \
+"/Users/najmussaqib/Pictures/2021_12_05/*.tif"
