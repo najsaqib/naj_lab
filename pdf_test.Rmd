@@ -1,0 +1,47 @@
+---
+title: "PDF Test"
+author: "Najmus Saqib"
+date: "15/12/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Info on R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+
+## Import some data to visualize
+
+To start, let's import international data on COVID-19 from PHAC's website and focus on G7 countries at the end of 2020  
+
+```{r, message = FALSE}
+raw_df <- read_csv("https://health-infobase.canada.ca/src/data/covidLive/international/InternationalCovid19Cases.csv")
+
+
+df <- raw_df %>% 
+        filter(iso_code %in% c("CAN","USA","DEU","FRA", "GBR", "ITA", "JPN")) %>%
+        filter(date == "2020-12-31") %>%
+        select(iso_code, date, new_cases_14_days_100k)
+
+df
+        
+
+```
+
+## Generate basic plot
+
+In `ggplot` it is easy to generate a visualization with minimal one line of code. Let's look at how the G7 nations were doing at the end of 2020 with respect to new cases of COVID-19 in the past 14 days per 100,000 population 
+
+```{r, echo=FALSE}
+g <- ggplot(df, aes(x = iso_code, y = new_cases_14_days_100k)) + geom_col()
+
+g
+```
+
+
