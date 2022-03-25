@@ -13,4 +13,4 @@ mogrify \
 -quality 90% \
 -format jpg \
 -bordercolor white -border 100 \
-"/Users/najmussaqib/Pictures/2021_12_05/*.tif"
+"/Users/najmussaqib/Pictures/temp_folder/*.jpeg"
