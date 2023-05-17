@@ -118,7 +118,7 @@ output <- py$result
 
 Once we have imported the results of the model back into R, we can do everything with it that we would be able to do with a native R data frame. In this instance, we will simply incorporate the results of the logistic regression into the narrative of the document via the `in-line code` ability of Quarto:
 
-The log odds for government owned buildings (i.e. facilities that are not leased and have a `Lease` value of `0`) is `r round(output[[1]], digits = 4)` and based on the estimated coefficient for the `Lease` variable, the odds ratio for leased buildings is `r round(exp(output[[2]][[2]]), digits = 4)`, meaning that government owned facilities are **`r paste(round(100*(exp(output[[2]][[2]])), digits = 2), "%")` more likely to contain asbestos** compared to leased buildings.
+> The log odds for government owned buildings (i.e. facilities that are not leased and have a `Lease` value of `0`) is `r round(output[[1]], digits = 4)` and based on the estimated coefficient for the `Lease` variable, the odds ratio for leased buildings is `r round(exp(output[[2]][[2]]), digits = 4)`, meaning that government owned facilities are **`r paste(round(100*(exp(output[[2]][[2]])), digits = 2), "%")` more likely to contain asbestos** compared to leased buildings.
 
 ## Wrapping up the exercise
 
