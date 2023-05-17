@@ -65,7 +65,7 @@ Plot.plot({
 
 ```
 
-The first code chunk above generates a radio button that allows users to filter the data based on the ownership type of the facility. In the second code chunk above, this user input is passed onto the code for the Observable Plot, which reacts in real-time to the user selection.
+The first code chunk above generates a radio button that allows users to filter the data based on the ownership type of the facility. In the second code chunk above, this user input is passed onto the code for the Observable Plot, which **reacts in real-time** to the user selection.
 
 ```{ojs}
 asbestos_js = transpose(asbestos_raw_js) // this converts rectangular data into an array, which is the way JavaScript visualizations prefer their inputs 
