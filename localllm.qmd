@@ -1,0 +1,253 @@
+---
+title: "Text data analysis in R"
+subtitle: "Five example workflows using ✨LLMs✨"
+author: "Najmus Saqib"
+format: 
+  revealjs:
+    theme: solarized
+editor: visual
+---
+
+## Context
+
+Artificial Intelligence and Large language models **(LLMs)** in particular have captured the public's imagination since the release of ChatGPT in late 2022.
+
+While broad-based utility of LLMs is still up for debate, recent developments have made it possible for R users to integrate these tools within their existing workflow.
+
+## What has changed? {.smaller}
+
+Recent developments have opened up new possibilities for leveraging LLMs:
+
+-   Release of **free and open-source** LLMs; proprietary tools were the only options previously
+-   Release of tools that make it possible to **deploy LLMs on a laptop;** previously the only option was to send data to third-party APIs
+-   Smaller models that perform admirably relative to the largest models, **reducing the resource requirements** to run them
+-   Development of **R packages** that make it possible to integrate LLMs like any other data analysis tool
+
+## Setup process
+
+Follow the steps below to set up your system:
+
+-   Download and install [Ollama](https://ollama.com/)
+-   Open Windows PowerShell and download one of the [models.](https://ollama.com/search) For example: `ollama run llama3.2`
+-   In R, download the [`mall`](https://mlverse.github.io/mall/) library `install.packages("mall")`
+
+## Five example workflows
+
+While there are various ways one can incorporate an LLM in their R workflow, the following five use cases illustrate how users within the Agency might choose to leverage this technology:
+
+1.  Handling typos
+
+2.  Data classification
+
+3.  Pattern matching
+
+4.  Sentiment analysis
+
+5.  Text summarization
+
+```{r}
+
+library(readr)
+library(dplyr)
+library(mall)
+
+# ollamar::pull("llama3.2")
+```
+
+## 1. Handling typos - Import Data
+
+To help illustrate how an LLM can help deal with typos, lets import a dummy data set of travellers coming into Canada.
+
+```{r}
+#| echo: true  
+
+traveller_data <- read_csv("https://raw.githubusercontent.com/najsaqib/naj_lab/refs/heads/main/traveller_data.csv", show_col_types = FALSE)
+
+traveller_data
+```
+
+## 1. Handling typos - Utilize LLM
+
+Since there are various typos in the `citizen` field for "Canada," lets see if we can prompt the LLM to identify them all correctly
+
+```{r}
+#| echo: true
+#| output-location: slide
+
+llm_use("ollama", "llama3.2", seed = 100, .silent = TRUE)
+
+my_prompt <- paste(
+  "Answer a question.",
+  "Return only the answer, no explanation",
+  "Acceptable answers are 'yes', 'no'",
+  "Answer this about the following text, Is this text related to Canada or a misspelling of Canada?:"
+)
+
+traveller_final <- traveller_data %>% llm_custom(citizen, my_prompt)
+
+traveller_final
+```
+
+## 1. Handling typos - Considerations
+
+-   You might find the prediction accuracy to be very sensitive to the choice of seed and to the exact wording of the prompt
+
+-   However, the main advantage of this approach is that it can handle misspellings of Canada that you might not encounter until later
+
+-   Another option could be using fuzzy/probabilistic matching techniques
+
+## 2. Data classification - Import Data
+
+Lets import a dummy global COVID-19 dataset to showcase how an LLM can be used for classification
+
+```{r}
+#| echo: true    
+
+covid_data <- read_csv("https://raw.githubusercontent.com/najsaqib/naj_lab/refs/heads/main/covid_deaths.csv", show_col_types = FALSE)  
+
+covid_data
+```
+
+## 2. Data classification - Utilize LLM
+
+We can take advantage of the LLM's existing knowledge-base to classify data along any category
+
+```{r}
+#| echo: true 
+#| output-location: slide  
+
+llm_use("ollama", "llama3.2", seed = 99, .silent = TRUE)
+
+covid_final <- covid_data %>% llm_extract(country, "continent")
+
+print(covid_final)
+```
+
+## 2. Data classification - Considerations
+
+-   The accuracy of this approach will decrease when dealing with lesser known subject matters (e.g. classifying cities along health regions)
+
+-   In this instance, it would be easy to find or create a new data set for `continents` and `left join` with the COVID-19 data set, but not all use cases will be as simple
+
+-   **Homework:** what would happen if the data set contained records with `Aragorn` and `Gondor` for countries? What about `Wakanda`?
+
+## 3. Pattern matching - Import Data
+
+For this example, we will import a dummy data set on quarantine
+
+```{r}
+#| echo: true      
+
+quarantine_data <- read_csv("https://raw.githubusercontent.com/najsaqib/naj_lab/refs/heads/main/quarantine_data.csv", show_col_types = FALSE)  
+
+quarantine_data$activity
+```
+
+## 3. Pattern matching - Utilize LLM
+
+Lets use the LLM to pattern match and extract a certain piece of information; in this case the postal code
+
+```{r}
+#| echo: true  
+#| output-location: slide    
+
+llm_use("ollama", "llama3.2", seed = 99, .silent = TRUE)
+
+quarantine_final <- quarantine_data %>% llm_extract(activity, "postal code")
+
+print(quarantine_final$.extract)
+```
+
+## 3. Pattern matching - Considerations
+
+-   Model accuracy will decrease for more niche use cases (e.g. Postal codes for smaller countries.)
+
+-   Simple to extract the relevant pieces of information from relatively large bodies of text
+
+-   A traditional option is to use Regular Expressions (regex), but syntax is quite challenging to learn
+
+## 4. Sentiment analysis - Import Data
+
+Lets import a dummy data set on user reviews for the `ArriveCan` application
+
+```{r}
+#| echo: true        
+
+app_data <- read_csv("https://raw.githubusercontent.com/najsaqib/naj_lab/refs/heads/main/app_reviews.csv", show_col_types = FALSE)    
+
+app_data$review
+```
+
+## 4. Sentiment analysis - Utilize LLM
+
+It could be helpful to quickly get a sense of the sentiment about the app as new updates are released
+
+```{r}
+#| echo: true   
+#| output-location: slide      
+
+llm_use("ollama", "llama3.2", seed = 100, .silent = TRUE)
+
+app_final <- app_data %>% llm_sentiment(review)
+
+print(app_final$.sentiment)
+```
+
+## 4. Sentiment analysis - Considerations
+
+-   Compared to traditional approaches, LLMs have a better grasp of the overall context, including subtleties such as sarcasm, irony, satire, slang, etc.
+
+-   Less compute intensive approaches (e.g. through the use of the `tidytext` package) rely on pre-determined lexicons and calculate the sentiment of the text as the sum of the content of the individual words.
+
+-   Generally speaking, accuracy is improved by better machines and larger models
+
+## 5. Text summarization - Import Data
+
+For this exercise, lets import a data set containing the initiating messages/statements from all of the annual CPHO reports under Dr. Tam's tenure
+
+```{r}
+#| echo: true          
+
+cpho_data <- read_csv("https://raw.githubusercontent.com/najsaqib/naj_lab/refs/heads/main/cpho_message.csv", show_col_types = FALSE)   
+
+cpho_data
+```
+
+## 5. Text summarization - Utilize LLM
+
+It would be helpful to get a quick summary of the messages for each year
+
+```{r}
+#| echo: true    
+#| output-location: slide        
+
+llm_use("ollama", "llama3.2", seed = 100, .silent = TRUE)
+
+cpho_final <- cpho_data %>% llm_summarize(text, max_words = 30)
+
+print(cpho_final$.summary)
+```
+
+## 5. Text summarization - Considerations
+
+-   The LLM's context awareness makes it a great tool for summarization
+
+-   While this is a very compute intensive task, there are no good alternatives for doing summarizations non-manually in a programmatic and consistent manner
+
+-   **Homework:** how will the LLM summarize text that is semantically meaningless? This also applies to sentiment analysis.
+
+## Concluding thoughts {.smaller}
+
+-   While the jury is still out on the overall utility of LLMs, there are already several proven use cases where their deployment can greatly supplement ongoing work, especially with respect to **text data** and **qualitative analysis**.
+
+-   In situations where other technological alternatives exist, LLM-based solutions have the downside of **hallucinations**, failures in sometimes inexplicable ways, and sensitivity to prompts that are not easily dealt with systematically.
+
+-   Implementation of **Retrieval-Augmented Generation** (RAG) methods can improve utility by giving the model access to domain/organizational knowledge, but at present requires usage of Python
+
+-   **References:**
+
+    -   `mall` package: <https://mlverse.github.io/mall/>
+
+    -   `ollama` application: <https://ollama.com/>
+
+    -   LLM explainer: <https://blogs.rstudio.com/ai/posts/2023-06-20-llm-intro/>
