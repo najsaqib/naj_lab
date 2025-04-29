@@ -240,11 +240,17 @@ print(cpho_final$.summary)
 
 -   While the jury is still out on the overall utility of LLMs, there are already several proven use cases where their deployment can greatly supplement ongoing work, especially with respect to **text data** and **qualitative analysis**.
 
--   In situations where other technological alternatives exist, LLM-based solutions have the downside of **hallucinations**, failures in sometimes inexplicable ways, and sensitivity to prompts that are not easily dealt with systematically.
+-   In situations where other technological alternatives exist, LLM-based solutions have the downside of **hallucinations** and vulnerability to **adversarial attacks**, failures in sometimes inexplicable ways, and sensitivity to prompts that are not easily dealt with systematically.
 
 -   Implementation of **Retrieval-Augmented Generation** (RAG) methods can improve utility by giving the model access to domain/organizational knowledge, but at present requires usage of Python
 
--   **References:**
+## Links {.smaller}
+
+-   **Quarto Notebook**
+
+    -   <https://github.com/najsaqib/naj_lab/blob/main/localllm.qmd>
+
+-   **References**
 
     -   `mall` package: <https://mlverse.github.io/mall/>
 
