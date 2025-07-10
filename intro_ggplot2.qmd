@@ -242,3 +242,7 @@ g7
 -   Good data visualization practices by Stephanie Evergreen: <https://www.datavisualizationchecklist.com/>
 
 -   Implementing Stephanie Evergreen checklist in `ggplot2`: <https://raw.githack.com/najsaqib/naj_lab/main/data_viz_checklist.html>
+
+-   Link to this document (Quarto Markdown): <https://github.com/najsaqib/naj_lab/blob/main/intro_ggplot2.qmd>
+
+-   Link to this document (HTML): <https://raw.githack.com/najsaqib/naj_lab/main/intro_ggplot2.html>
