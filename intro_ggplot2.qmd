@@ -1,0 +1,244 @@
+---
+title: "Introduction to ggplot2"
+title-slide-attributes: 
+  data-background-color: "aquamarine"
+subtitle: "The most popular data visualization framework in R"
+author: "PHAC R Usergroup: Basics of R Summer Camp"
+date: "2025-07-23"
+format: 
+  revealjs:
+    theme: solarized
+    embed-resources: true
+editor: visual
+---
+
+## What is ggplot2? {.smaller}
+
+`ggplot2` is the most downloaded R library in the world
+
+```{r}
+#| message: false
+library(ggplot2)
+library(cranlogs)
+library(scales)
+
+ggplot_downloads_df <- cran_downloads("ggplot2", from = "2015-01-01", to = "2025-06-30")
+
+g1 <- ggplot(ggplot_downloads_df, aes(x = date, y = count)) +
+             geom_point(colour = "lightgrey") +
+             scale_y_continuous(labels = label_number(suffix = "K", scale = 1e-3)) + # thousands
+             geom_smooth() +
+             labs(title = "ggplot2's rise in popularity over the past decade", 
+             subtitle = "Number of daily downloads from CRAN",
+             x = NULL,
+             y = NULL) +
+             theme_minimal() 
+g1
+             
+```
+
+## ggplot2 overview {.smaller}
+
+-   Part of the `tidyverse` suite of packages, `ggplot2` offers great consistency with `dplyr` pipes and syntax, with one very **notable exception**: the use of `+` instead of `%>%` to connect functions/verbs
+
+-   "gg" refers to "[The Grammar of Graphics](https://link.springer.com/book/10.1007/0-387-28695-0)," a 1999 book from Leland Wilkinson that laid out a framework for creating statistical graphics in **layered components**
+
+-   The "2" in `ggplot2` alludes to the fact that this package supplants an older, less efficient library called `ggplot`, but since the developer wanted to support legacy usage of the older library, both packages were maintained for a period of time. Nevertheless, `ggplot()` remains as the main function in `ggplot2`
+
+## Anatomy of a plot
+
+[![https://ggplot2.tidyverse.org/articles/ggplot2.html](ggplot2_layers.png)](https://ggplot2.tidyverse.org/articles/ggplot2.html)
+
+## Getting started - Data
+
+```{r}
+#| echo: true  
+
+tail(ggplot_downloads_df)
+```
+
+## Getting started - Plot {.smaller}
+
+```{r}
+#| echo: true  
+
+library(ggplot2)
+
+# ggplot2 needs the user to provide at least the following three components: 
+# data, mapping, and layer
+
+g2 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point()                  # Layer
+
+g2
+
+```
+
+## Select plot types
+
+[![https://ouyanglab.com/covid19dataviz/ggplot2.html](plot_types.png)](https://ouyanglab.com/covid19dataviz/ggplot2.html)
+
+## How to make a good plot? {.smaller}
+
+-   Easy to start with some minimally viable code for a plot, but how does one make a cleaner and more polished graph?
+
+    -   Ironically, you need more lines of code to have a less cluttered plot
+
+-   By utilizing rest of the components, one can add more features to the graph and also clean up unnecessary elements
+
+-   Implement some good data visualization practices. Author Stephanie Evergreen has a 24-point checklist on [her website](https://stephanieevergreen.com/rate-your-visualization/), and a [previous presentation](https://raw.githack.com/najsaqib/naj_lab/main/data_viz_checklist.html) in the user group shows how to incorporate that in `ggplot2`
+
+## Polishing the plot - Additional Geom {.smaller}
+
+```{r}
+#| echo: true
+#| message: false
+#| code-line-numbers: "|6"
+library(scales)
+
+g3 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point() +                # Layer
+             geom_smooth()                 # Layer (additional)
+  
+g3
+
+```
+
+## Polishing the plot - Scaling layer {.smaller}
+
+```{r}
+#| echo: true
+#| message: false
+#| code-line-numbers: "|7-10"
+library(scales)
+
+g4 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point() +                # Layer
+             geom_smooth() +               # Layer (additional)
+             scale_y_continuous(
+               labels = label_number(
+                 suffix = "K", scale = 1e-3)
+               )                           # Scale
+  
+g4
+
+```
+
+## Polishing the plot - Theme layer {.smaller}
+
+```{r}
+#| echo: true
+#| message: false
+#| code-line-numbers: "|11"
+library(scales)
+
+g5 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point() +                # Layer
+             geom_smooth() +               # Layer (additional)
+             scale_y_continuous(
+               labels = label_number(
+                 suffix = "K", scale = 1e-3)
+               ) +                         # Scale
+             theme_minimal()               # Theme
+g5
+
+```
+
+## Polishing the plot - Specifying Labels {.smaller}
+
+```{r}
+#| echo: true
+#| message: false
+#| code-line-numbers: "|12-15"
+library(scales)
+
+g6 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point() +                # Layer
+             geom_smooth() +               # Layer (additional)
+             scale_y_continuous(
+               labels = label_number(
+                 suffix = "K", scale = 1e-3)
+               ) +                         # Scale
+             theme_minimal() +             # Theme
+             labs(title = "ggplot2's rise in popularity over the past decade",
+                  subtitle = "Number of daily downloads from CRAN",
+                         x = NULL,
+                         y = NULL)         # Labels
+g6
+
+```
+
+## Polishing the plot - Modify Colour {.smaller}
+
+```{r}
+#| echo: true
+#| message: false
+#| code-line-numbers: "|5"
+library(scales)
+
+g7 <- ggplot(ggplot_downloads_df,          # Data
+             aes(x = date, y = count)) +   # Mapping
+             geom_point(colour = "lightgrey") + # Layer
+             geom_smooth() +               # Layer (additional)
+             scale_y_continuous(
+               labels = label_number(
+                 suffix = "K", scale = 1e-3)
+               ) +                         # Scale
+             theme_minimal() +             # Theme
+             labs(title = "ggplot2's rise in popularity over the past decade",
+                  subtitle = "Number of daily downloads from CRAN",
+                         x = NULL,
+                         y = NULL)         # Labels
+g7
+
+```
+
+## Where can ggplot2 visuals be used? {.smaller}
+
+-   RStudio
+
+-   HTML documents
+
+-   Word/Powerpoint files
+
+-   Markdown documents
+
+-   Books
+
+-   Websites
+
+-   Interactive apps
+
+-   Copy + Paste them in emails, reports, briefing notes, etc.
+
+## Suggested avenues to explore {.smaller}
+
+-   Experiment with different types of graphs
+-   Change default parameters
+-   Plot maps
+-   Play around with various `ggplot2` extensions
+-   Learn how to incorporate `ggplot2` graphs in R Markdown/Quarto reports
+-   Implement reactive `ggplot2` objects within Shiny apps
+-   Explore interactive plots via `ggiraph` or `ggplotly` packages
+-   Compare and contrast `ggplot2` with base R or different libraries
+-   Match Government of Canada look and feel
+-   Make visuals colour-blind friendly and generally compliant with accessibility standards
+
+## Resources {.smaller}
+
+-   Official website: <https://ggplot2.tidyverse.org/index.html>
+
+-   Cheat sheet: <https://github.com/rstudio/cheatsheets/blob/main/data-visualization.pdf>
+
+-   Book of common plots: <https://r-graphics.org/>
+
+-   Example graphs (includes non-`ggplot2` examples): <https://r-graph-gallery.com/>
+
+-   Good data visualization practices by Stephanie Evergreen: <https://www.datavisualizationchecklist.com/>
+
+-   Implementing Stephanie Evergreen checklist in `ggplot2`: <https://raw.githack.com/najsaqib/naj_lab/main/data_viz_checklist.html>
